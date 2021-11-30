@@ -1,8 +1,8 @@
 # O q estou fazendo
 
-Instalar Material UI
+Instalar Material UI - OK
 
-trocar theme pela theme deles
+trocar theme pela theme deles - OK
 
 Instalar next-images
 

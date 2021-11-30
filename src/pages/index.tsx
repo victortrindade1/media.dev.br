@@ -1,6 +1,7 @@
-import React from "react";
-import type { NextPage } from "next";
-import Head from "next/head";
+import React from 'react'
+import type { NextPage } from 'next'
+import Head from 'next/head'
+import { Button } from '@material-ui/core'
 
 const Home: NextPage = () => {
   return (
@@ -11,9 +12,10 @@ const Home: NextPage = () => {
 
       <main>
         <h1>Hellooooo</h1>
+        <Button>Teste do Material UI</Button>
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
