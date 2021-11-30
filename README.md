@@ -1,3 +1,23 @@
+# O q estou fazendo
+
+Instalar Material UI
+
+trocar theme pela theme deles
+
+Instalar next-images
+
+Modificar \_app e \_document parecido com do ultraoral
+
+Fazer component layout e noscrolllink
+
+fazer header e footer
+
+fazer framer motion
+
+fazer interface responsive com breakpoint no \_app
+
+## Create Next App
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
