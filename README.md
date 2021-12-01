@@ -1,9 +1,5 @@
 # O q estou fazendo
 
-Instalar Material UI - OK
-
-trocar theme pela theme deles - OK
-
 Instalar next-images
 
 Modificar \_app e \_document parecido com do ultraoral
