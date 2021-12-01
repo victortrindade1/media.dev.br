@@ -1,5 +1,4 @@
 import React from 'react'
-// import Document, { DocumentContext, DocumentInitialProps } from 'next/document'
 import Document, {
   DocumentContext,
   DocumentInitialProps,
@@ -57,7 +56,8 @@ export default class MyDocument extends Document {
           />
 
           {/* Favicon */}
-          <link rel="icon" href="https://rocketseat.com.br/favicon.ico" />
+          {/* <link rel="icon" href="https://rocketseat.com.br/favicon.ico" /> */}
+          <link rel="icon" href="/favicon.png" type="image/png" />
 
           {/* Material UI Icons */}
           <link

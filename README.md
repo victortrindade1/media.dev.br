@@ -1,7 +1,5 @@
 # O q estou fazendo
 
-Instalar next-images
-
 Modificar \_app e \_document parecido com do ultraoral
 
 Fazer component layout e noscrolllink
