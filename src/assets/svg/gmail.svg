@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 134.94 103.19" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-39.688 -66.146)">
+  <g>
+   <rect x="44.979" y="66.146" width="124.35" height="103.19" fill="#fff" stroke-width=".067"/>
+   <g fill="#f14336">
+    <rect x="39.688" y="71.438" width="15.875" height="97.896" stroke-width=".065259"/>
+    <rect x="158.75" y="71.438" width="15.875" height="97.896" stroke-width=".065259"/>
+    <g stroke-width=".067">
+     <rect x="165.36" y="66.146" width="5.9531" height="5.2917"/>
+     <rect x="171.32" y="66.807" width=".66146" height="4.6302"/>
+     <rect x="171.98" y="67.469" width="1.3229" height="3.9688"/>
+     <rect x="173.3" y="68.792" width="1.3229" height="2.6458"/>
+     <rect x="164.7" y="66.146" width=".66146" height="5.2917"/>
+     <rect x="163.38" y="67.469" width="1.3229" height="3.9688"/>
+     <rect x="162.06" y="68.13" width="1.3229" height="3.3073"/>
+     <rect x="160.73" y="69.453" width="1.3229" height="1.9844"/>
+     <rect x="159.41" y="70.115" width="1.3229" height="1.3229"/>
+     <rect x="158.75" y="70.776" width=".66146" height=".66146"/>
+     <rect x="154.12" y="74.083" width="4.6302" height="17.198"/>
+     <rect x="149.49" y="77.391" width="4.6302" height="17.198"/>
+     <rect x="144.86" y="80.698" width="4.6302" height="17.198"/>
+     <rect x="140.23" y="84.667" width="4.6302" height="17.198"/>
+     <rect x="135.6" y="87.313" width="4.6302" height="17.198"/>
+     <rect x="130.97" y="90.62" width="4.6302" height="17.198"/>
+     <rect x="126.34" y="93.927" width="4.6302" height="17.198"/>
+     <rect x="121.71" y="97.896" width="4.6302" height="17.198"/>
+     <rect x="117.08" y="101.2" width="4.6302" height="17.198"/>
+     <rect x="112.45" y="104.51" width="4.6302" height="17.198"/>
+    </g>
+    <rect x="107.06" y="107.82" width="5.3862" height="17.198" stroke-width=".072263"/>
+    <g stroke-width=".067">
+     <rect transform="scale(-1,1)" x="-48.948" y="66.146" width="5.9531" height="5.2917"/>
+     <rect transform="scale(-1,1)" x="-42.995" y="66.807" width=".66146" height="4.6302"/>
+     <rect transform="scale(-1,1)" x="-42.333" y="67.469" width="1.3229" height="3.9688"/>
+     <rect transform="scale(-1,1)" x="-41.01" y="68.792" width="1.3229" height="2.6458"/>
+     <rect transform="scale(-1,1)" x="-49.609" y="66.146" width=".66146" height="5.2917"/>
+     <rect transform="scale(-1,1)" x="-50.932" y="67.469" width="1.3229" height="3.9688"/>
+     <rect transform="scale(-1,1)" x="-52.255" y="68.13" width="1.3229" height="3.3073"/>
+     <rect transform="scale(-1,1)" x="-53.578" y="69.453" width="1.3229" height="1.9844"/>
+     <rect transform="scale(-1,1)" x="-54.901" y="70.115" width="1.3229" height="1.3229"/>
+     <rect transform="scale(-1,1)" x="-55.562" y="70.776" width=".66146" height=".66146"/>
+     <rect transform="scale(-1,1)" x="-60.193" y="74.083" width="4.6302" height="17.198"/>
+     <rect transform="scale(-1,1)" x="-64.823" y="77.391" width="4.6302" height="17.198"/>
+     <rect transform="scale(-1,1)" x="-69.453" y="80.698" width="4.6302" height="17.198"/>
+     <rect transform="scale(-1,1)" x="-74.083" y="84.667" width="4.6302" height="17.198"/>
+     <rect transform="scale(-1,1)" x="-78.714" y="87.313" width="4.6302" height="17.198"/>
+     <rect transform="scale(-1,1)" x="-83.344" y="90.62" width="4.6302" height="17.198"/>
+     <rect transform="scale(-1,1)" x="-87.974" y="93.927" width="4.6302" height="17.198"/>
+     <rect transform="scale(-1,1)" x="-92.604" y="97.896" width="4.6302" height="17.198"/>
+     <rect transform="scale(-1,1)" x="-97.234" y="101.2" width="4.6302" height="17.198"/>
+     <rect transform="scale(-1,1)" x="-101.86" y="104.51" width="4.6302" height="17.198"/>
+    </g>
+    <rect transform="scale(-1,1)" x="-107.16" y="107.82" width="5.2917" height="17.198" stroke-width=".071626"/>
+   </g>
+  </g>
+ </g>
+</svg>

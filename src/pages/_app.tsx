@@ -1,13 +1,14 @@
 import React from 'react'
 import { AppProps } from 'next/app'
+import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles'
 import { AnimatePresence } from 'framer-motion'
 // // import { DefaultSeo } from 'next-seo'
 import { useMediaQuery } from '@material-ui/core'
 
-// import Header from ''
-// import Footer from ''
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 import GlobalStyle from '../styles/global'
 import theme from '../styles/theme'
@@ -19,6 +20,10 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
 
   return (
     <>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+      </Head>
       {/* <DefaultSeo
         titleTemplate="%s - James Wallis"
         openGraph={{
@@ -33,7 +38,7 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
       /> */}
       <MuiThemeProvider theme={theme}>
         <ThemeProvider theme={theme}>
-          {/* <Header isBreakpoint={isBreakpoint} /> */}
+          <Header isBreakpoint={isBreakpoint} />
           <AnimatePresence
             exitBeforeEnter
             initial={false}
@@ -47,7 +52,7 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
             />
           </AnimatePresence>
 
-          {/* <Footer isBreakpoint={isBreakpoint} /> */}
+          <Footer />
 
           <GlobalStyle />
         </ThemeProvider>

@@ -1,9 +1,5 @@
 # O q estou fazendo
 
-Modificar \_app e \_document parecido com do ultraoral
-
-Fazer component layout e noscrolllink
-
 fazer header e footer
 
 fazer framer motion

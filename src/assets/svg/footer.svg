@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 30.692 25.072" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <defs>
+  <filter id="filter5863" x="-5.3416e-5" y="-6.5391e-5" width="1.0001" height="1.0001" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="0.00068302407"/>
+  </filter>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-68.372 -64.846)">
+  <g transform="translate(30.688)" filter="url(#filter5863)">
+   <rect x="37.686" y="73.498" width="30.688" height="16.419" fill="#c69e64" stroke-width=".93377"/>
+   <g fill="#e1c664">
+    <rect x="57.079" y="81.872" width="4.1873" height="5.2892" stroke-width=".265"/>
+    <rect x="46.721" y="78.897" width="4.1873" height="5.2892" stroke-width=".265"/>
+    <rect x="41.652" y="84.848" width="1.9834" height="3.4159" stroke-width=".14657"/>
+   </g>
+   <rect x="37.686" y="66.666" width="30.688" height="6.8319" fill="#5ccb3c" stroke-width=".53876"/>
+   <g>
+    <rect x="37.686" y="64.848" width="30.688" height="1.8182" stroke-width=".27793"/>
+    <g stroke-width=".265">
+     <rect x="37.686" y="75.151" width="5.8402" height="1.6529" ry="0"/>
+     <rect x="43.526" y="73.498" width="3.9118" height="1.6529" ry="0"/>
+     <rect x="47.437" y="71.845" width="5.4545" height="1.6529"/>
+     <rect x="52.892" y="73.388" width="5.8953" height="1.5427"/>
+     <rect x="58.787" y="71.79" width="5.6749" height="1.708"/>
+     <rect x="64.462" y="73.388" width="3.9118" height="1.5427"/>
+    </g>
+   </g>
+   <g fill="#35794d" stroke-width=".265">
+    <rect x="37.686" y="73.498" width="5.8402" height="1.6529" ry="0"/>
+    <rect x="43.526" y="71.845" width="3.9118" height="1.6529" ry="0"/>
+    <rect x="47.437" y="70.192" width="5.4545" height="1.6529"/>
+    <rect x="52.892" y="71.845" width="5.8953" height="1.5427"/>
+    <rect x="58.787" y="70.137" width="5.6749" height="1.708"/>
+    <rect x="64.462" y="71.845" width="3.9118" height="1.5427"/>
+   </g>
+   <g fill="#786c29" stroke-width=".265">
+    <rect x="37.686" y="76.693" width="5.8402" height="1.6529" ry="0"/>
+    <rect x="43.526" y="75.04" width="3.9118" height="1.6529" ry="0"/>
+    <rect x="47.437" y="73.388" width="5.4545" height="1.6529"/>
+    <rect x="52.892" y="74.93" width="5.8953" height="1.5427"/>
+    <rect x="58.787" y="73.333" width="5.6749" height="1.708"/>
+    <rect x="64.462" y="74.93" width="3.9118" height="1.5427"/>
+   </g>
+  </g>
+ </g>
+</svg>

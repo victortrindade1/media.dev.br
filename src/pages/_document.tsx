@@ -40,9 +40,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt">
         <Head>
-          <meta charSet="utf-8" />
-          <meta name="viewport" content="initial-scale=1, width=device-width" />
-
           {/* Fonte Roboto */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
