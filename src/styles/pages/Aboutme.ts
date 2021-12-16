@@ -136,4 +136,12 @@ export const ListItems = styled.ul``
 export const ItemSkill = styled.li`
   list-style-type: none;
   padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`
+
+export const Skeleton = styled.img`
+  width: 27px;
+  margin-right: 15px;
 `

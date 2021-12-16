@@ -11,6 +11,7 @@ import Layout from '../components/Layout'
 import Title from '../components/Title'
 
 import background from '../assets/svg/montanhas.svg'
+import skeleton from '../assets/svg/skeleton.svg'
 import avatar from '../assets/img/avatar.jpeg'
 
 import IResponsive from '../interfaces/IResponsive'
@@ -30,7 +31,8 @@ import {
   PresentationContainer,
   SkillContainer,
   ListItems,
-  ItemSkill
+  ItemSkill,
+  Skeleton
 } from '../styles/pages/Aboutme'
 
 const title = 'About Me'
@@ -103,7 +105,10 @@ const Aboutme: NextPage<IResponsive> = ({ isBreakpoint }: IResponsive) => {
                     <AccordionDetails sx={{ background: '#e4e4e4' }}>
                       <ListItems>
                         {item.items.map((item, id) => (
-                          <ItemSkill key={id}>{item}</ItemSkill>
+                          <ItemSkill key={id}>
+                            <Skeleton src={skeleton} alt="skeleton" />
+                            <div>{item}</div>
+                          </ItemSkill>
                         ))}
                       </ListItems>
                     </AccordionDetails>
