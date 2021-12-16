@@ -79,7 +79,7 @@ export const DescriptionContainer = styled.div`
   top: 40vh;
   left: 0;
   right: 0; */
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', 'Roboto', sans-serif;
   color: #fff;
   font-size: small;
   line-height: 1.6;
@@ -96,7 +96,7 @@ export const SkillContainer = styled.div`
 `
 
 export const Subtitle = styled.div`
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', 'Roboto', sans-serif;
   color: #fff;
   font-size: 1rem;
   /* margin-bottom: 50px; */
@@ -112,7 +112,7 @@ export const SkillBox = styled.div`
   width: 80vw;
   max-width: 300px;
   margin-top: 30px;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', 'Roboto', sans-serif;
   color: #555;
   font-size: 1rem;
 `
@@ -125,7 +125,7 @@ export const Skill = styled.li`
   width: 80vw;
   max-width: 300px;
   margin-top: 30px;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', 'Roboto', sans-serif;
   /* color: #555; */
   /* font-size: 1rem; */
   list-style-type: none;

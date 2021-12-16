@@ -38,7 +38,7 @@ export const TextContainer = styled.div`
   top: 40vh;
   /* left: 0;
   right: 0; */
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', 'Roboto', sans-serif;
   color: #fff;
   font-size: small;
   line-height: 1.6;
