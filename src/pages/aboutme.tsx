@@ -1,6 +1,11 @@
 import React from 'react'
 import type { NextPage } from 'next'
-import { GitHub, LinkedIn, WhatsApp } from '@material-ui/icons'
+import { GitHub, LinkedIn, ArrowDropDown, WhatsApp } from '@material-ui/icons'
+import {
+  Accordion,
+  AccordionSummary,
+  AccordionDetails
+} from '@material-ui/core'
 
 import Layout from '../components/Layout'
 import Title from '../components/Title'
@@ -17,16 +22,43 @@ import {
   SocialMediaContainer,
   DescriptionContainer,
   Subtitle,
-  SkillBox,
+  // SkillBox,
   // FlexRowDiv,
+  ListSkills,
+  Skill,
   ResponsiveDiv,
   PresentationContainer,
-  SkillContainer
+  SkillContainer,
+  ListItems,
+  ItemSkill
 } from '../styles/pages/Aboutme'
 
 const title = 'About Me'
 const subtitle =
   "Hi, my name is Victor Trindade. I'm a software developer at Brazil."
+
+const listSkills = [
+  {
+    category: 'FRONT-END',
+    items: ['React', 'React Native', 'Redux', 'NextJS', 'Typescript']
+  },
+  {
+    category: 'BACK-END',
+    items: [
+      'NodeJS',
+      'Express',
+      'Docker',
+      'MongoDB',
+      'Postgres',
+      'Redis',
+      'Insomnia'
+    ]
+  },
+  {
+    category: 'STUFFS',
+    items: ['Github', 'TDD', 'SOLID']
+  }
+]
 
 const Aboutme: NextPage<IResponsive> = ({ isBreakpoint }: IResponsive) => {
   return (
@@ -57,11 +89,29 @@ const Aboutme: NextPage<IResponsive> = ({ isBreakpoint }: IResponsive) => {
           </PresentationContainer>
           <SkillContainer>
             <Subtitle>SKILLS</Subtitle>
-            <SkillBox>FRONT-END</SkillBox>
-            <SkillBox>BACK-END</SkillBox>
-            <SkillBox>STUFFS</SkillBox>
+            <ListSkills>
+              {listSkills.map(item => (
+                <Skill key={item.category}>
+                  <Accordion square>
+                    <AccordionSummary
+                      expandIcon={
+                        <ArrowDropDown fontSize={'large'} color={'info'} />
+                      }
+                    >
+                      {item.category}
+                    </AccordionSummary>
+                    <AccordionDetails sx={{ background: '#e4e4e4' }}>
+                      <ListItems>
+                        {item.items.map((item, id) => (
+                          <ItemSkill key={id}>{item}</ItemSkill>
+                        ))}
+                      </ListItems>
+                    </AccordionDetails>
+                  </Accordion>
+                </Skill>
+              ))}
+            </ListSkills>
           </SkillContainer>
-          {/* </FlexRowDiv> */}
         </ResponsiveDiv>
       </Container>
     </Layout>

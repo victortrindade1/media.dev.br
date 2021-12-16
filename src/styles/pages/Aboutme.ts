@@ -88,16 +88,18 @@ export const DescriptionContainer = styled.div`
 
 export const SkillContainer = styled.div`
   /* background: teal; */
+  /* justify-content: flex-start; */
   justify-content: center;
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 `
 
 export const Subtitle = styled.div`
   font-family: 'Press Start 2P', cursive;
-  color: #555;
-  font-size: 1.5rem;
-  margin-bottom: 50px;
+  color: #fff;
+  font-size: 1rem;
+  /* margin-bottom: 50px; */
   /* margin-bottom: 80px;
   margin-right: auto;
     margin-left: 10vw; */
@@ -113,4 +115,25 @@ export const SkillBox = styled.div`
   font-family: 'Press Start 2P', cursive;
   color: #555;
   font-size: 1rem;
+`
+
+export const ListSkills = styled.ul``
+
+export const Skill = styled.li`
+  /* background: #fff; */
+  /* padding: 30px; */
+  width: 80vw;
+  max-width: 300px;
+  margin-top: 30px;
+  font-family: 'Press Start 2P', cursive;
+  /* color: #555; */
+  /* font-size: 1rem; */
+  list-style-type: none;
+`
+
+export const ListItems = styled.ul``
+
+export const ItemSkill = styled.li`
+  list-style-type: none;
+  padding: 5px;
 `
