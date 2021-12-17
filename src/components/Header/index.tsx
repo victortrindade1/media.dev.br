@@ -1,6 +1,6 @@
 import React from 'react'
 
-import logo from '../../assets/svg/logo2.svg'
+import logo from '../../assets/svg/logo_mediadev.svg'
 import menubutton from '../../assets/svg/menubutton.svg'
 import { Container, Logo, Shake, MenuButton } from './styles'
 

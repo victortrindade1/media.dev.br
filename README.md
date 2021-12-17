@@ -1,10 +1,8 @@
 # O q estou fazendo
 
-fazer header e footer
+Trocar o MEDIA da logo (está vindo escrito. deixar tipo bitmap, pq no celular da minha mae ficou como texto em outra fonte)
 
-fazer framer motion
-
-fazer interface responsive com breakpoint no \_app
+fazer menu
 
 ## Create Next App
 

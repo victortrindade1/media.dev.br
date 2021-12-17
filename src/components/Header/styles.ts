@@ -24,7 +24,8 @@ export const Container = styled.div<IResponsive>`
 `
 
 export const Logo = styled.img`
-  width: 80px;
+  /* width: 80px; */
+  height: 70px;
 `
 
 export const Shake = styled.div`
