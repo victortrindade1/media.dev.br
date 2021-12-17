@@ -5,6 +5,10 @@ interface IContainer {
   background: any
 }
 
+interface IHover {
+  backgroundHover: any
+}
+
 export const Container = styled.div<IContainer>`
   background: #0064b8 url('${props => props.background}') no-repeat center;
   background-size: cover;
@@ -133,15 +137,25 @@ export const Skill = styled.li`
 
 export const ListItems = styled.ul``
 
-export const ItemSkill = styled.li`
+export const ItemSkill = styled.li<IHover>`
   list-style-type: none;
   padding: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  &:hover,
+  &:active,
+  &:focus {
+    > span div {
+      background: url('${props => props.backgroundHover}') no-repeat center;
+    }
+  }
 `
 
-export const Skeleton = styled.img`
+export const Skeleton = styled.div<IContainer>`
   width: 27px;
+  height: 35px;
   margin-right: 15px;
+  background: url('${props => props.background}') no-repeat center;
 `
