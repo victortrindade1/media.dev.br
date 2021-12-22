@@ -23,8 +23,8 @@ const Home: NextPage = () => {
         <ScenarioCloud src={cloudImg} alt="cloud" />
         <TextContainer>
           <p>
-            teste Hi, it&apos;s me, Mario! I gave up on saving the princess...
-            Now I just want to develop websites and apps.
+            Hi, it&apos;s me, Mario! I gave up on saving the princess... Now I
+            just want to develop websites and apps.
           </p>
         </TextContainer>
         <ScenarioPipe src={pipe} alt="pipe" />
