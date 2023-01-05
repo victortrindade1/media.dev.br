@@ -21,9 +21,9 @@ interface IContainer {
   background: any
 }
 
-interface IHover {
-  backgroundHover: any
-}
+// interface IHover {
+//   backgroundHover: any
+// }
 
 export const Container = styled.div<IContainer>`
   background: #0064b8 url('${props => props.background}') no-repeat center;
@@ -121,7 +121,7 @@ export const Skill = styled.li`
 
 export const ListItems = styled.ul``
 
-export const ItemSkill = styled.li<IHover>`
+export const ItemSkill = styled.li`
   list-style-type: none;
   padding: 5px;
   display: flex;

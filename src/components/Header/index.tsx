@@ -9,7 +9,7 @@ import Menu from '../Menu'
 const Header: React.FC<IResponsive> = ({ isBreakpoint }) => {
   return (
     <Container isBreakpoint={isBreakpoint}>
-      <Logo src={logo} alt="Media Dev" />
+      <Logo background={logo} />
       <Menu />
     </Container>
   )

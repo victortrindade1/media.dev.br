@@ -12,7 +12,7 @@ import Title from '../components/Title'
 
 import background from '../assets/svg/montanhas.svg'
 import skeleton from '../assets/svg/skeleton.svg'
-import skeleton_dead from '../assets/svg/skeleton_dead.svg'
+// import skeleton_dead from '../assets/svg/skeleton_dead.svg'
 import avatar from '../assets/img/avatar.jpeg'
 
 import IResponsive from '../interfaces/IResponsive'
@@ -108,7 +108,7 @@ const Aboutme: NextPage<IResponsive> = ({ isBreakpoint }: IResponsive) => {
                     >
                       <ListItems>
                         {item.items.map((item, id) => (
-                          <ItemSkill key={id} backgroundHover={skeleton_dead}>
+                          <ItemSkill key={id}>
                             <span>
                               <Skeleton background={skeleton} />
                             </span>
