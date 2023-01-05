@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         <TextContainer>
           <p>
             Hi, it&apos;s me, Mario! I gave up on saving the princess... Now I
-            just want to develop websites and apps.
+            just want to develop websites, apps and servers.
           </p>
         </TextContainer>
         <ScenarioPipe src={pipe} alt="pipe" />

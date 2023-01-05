@@ -73,7 +73,7 @@ const Aboutme: NextPage<IResponsive> = ({ isBreakpoint }: IResponsive) => {
         <Title title="About me" isLight />
         <ResponsiveDiv isBreakpoint={isBreakpoint}>
           {/* <FlexRowDiv> */}
-          <PresentationContainer>
+          <PresentationContainer isBreakpoint={isBreakpoint}>
             <AvatarContainer>
               <Avatar src={avatar} alt="Avatar Photo" />
               <SocialMediaContainer>
@@ -84,13 +84,13 @@ const Aboutme: NextPage<IResponsive> = ({ isBreakpoint }: IResponsive) => {
             </AvatarContainer>
             <DescriptionContainer>
               <p>
-                Hi, my name is Victor Trindade (yes, I&apos;m not Mario...).
+                Actually, I&apos;m not Mario... My name is Victor Trindade.
                 I&apos;m a software developer at Rio de Janeiro, Brazil. If
                 you&apos;re interested, please contact me!
               </p>
             </DescriptionContainer>
           </PresentationContainer>
-          <SkillContainer>
+          <SkillContainer isBreakpoint={isBreakpoint}>
             <Subtitle>SKILLS</Subtitle>
             <ListSkills>
               {listSkills.map(item => (
@@ -103,7 +103,9 @@ const Aboutme: NextPage<IResponsive> = ({ isBreakpoint }: IResponsive) => {
                     >
                       {item.category}
                     </AccordionSummary>
-                    <AccordionDetails sx={{ background: '#e4e4e4' }}>
+                    <AccordionDetails
+                      sx={{ background: '#000', color: '#fff' }}
+                    >
                       <ListItems>
                         {item.items.map((item, id) => (
                           <ItemSkill key={id} backgroundHover={skeleton_dead}>

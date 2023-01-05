@@ -1,5 +1,7 @@
 # O q estou fazendo
 
+Vou fazer o menu com um drawer de baixo pra cima, sendo uma água, e tentar fazer meio transparente
+
 Trocar o MEDIA da logo (está vindo escrito. deixar tipo bitmap, pq no celular da minha mae ficou como texto em outra fonte)
 
 fazer menu

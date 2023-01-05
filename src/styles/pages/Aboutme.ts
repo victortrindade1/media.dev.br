@@ -1,5 +1,21 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import IResponsive from '../../interfaces/IResponsive'
+import skeleton_dead from '../../assets/svg/skeleton_dead.svg'
+import skeleton from '../../assets/svg/skeleton.svg'
+import skeleton_dying from '../../assets/svg/skeleton_dying.svg'
+
+const skeletonAnimation = keyframes`
+  0% {
+    background: url(${skeleton}) no-repeat center;
+   }
+   5% {
+    background: url(${skeleton_dying}) no-repeat center;
+   }
+   10% {
+    background: url(${skeleton_dead}) no-repeat center;
+   }
+  100% { background: url(${skeleton_dead}) no-repeat center; }
+`
 
 interface IContainer {
   background: any
@@ -31,19 +47,10 @@ export const ResponsiveDiv = styled.div<IResponsive>`
   flex-direction: ${props => (props.isBreakpoint ? 'column' : 'row')};
   width: 100%;
   align-items: ${props => props.isBreakpoint && 'center'};
-  justify-content: ${props => !props.isBreakpoint && 'space-around'};
+  justify-content: ${props => !props.isBreakpoint && 'flex-start'};
 `
 
-// export const FlexRowDiv = styled.div`
-//   display: flex;
-//   flex: 1;
-//   justify-content: center;
-//   flex-wrap: wrap;
-//   width: 100%;
-//   margin-right: auto;
-// `
-
-export const PresentationContainer = styled.div`
+export const PresentationContainer = styled.div<IResponsive>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,6 +58,7 @@ export const PresentationContainer = styled.div`
   width: 100%;
   max-width: 400px;
   /* margin: 10vw; */
+  margin-left: ${props => !props.isBreakpoint && '5vw'};
 `
 
 export const AvatarContainer = styled.div`
@@ -74,15 +82,9 @@ export const SocialMediaContainer = styled.div`
 
 export const DescriptionContainer = styled.div`
   background: #000;
-  /* width: 300px; */
   width: 80vw;
   max-width: 400px;
   padding: 20px;
-  /* margin: auto; */
-  /* position: absolute;
-  top: 40vh;
-  left: 0;
-  right: 0; */
   font-family: 'Press Start 2P', 'Roboto', sans-serif;
   color: #fff;
   font-size: small;
@@ -90,48 +92,30 @@ export const DescriptionContainer = styled.div`
   margin-bottom: 80px;
 `
 
-export const SkillContainer = styled.div`
-  /* background: teal; */
-  /* justify-content: flex-start; */
+export const SkillContainer = styled.div<IResponsive>`
   justify-content: center;
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
+
+  margin-left: ${props => !props.isBreakpoint && '10vw'};
 `
 
 export const Subtitle = styled.div`
   font-family: 'Press Start 2P', 'Roboto', sans-serif;
   color: #fff;
   font-size: 1rem;
-  /* margin-bottom: 50px; */
-  /* margin-bottom: 80px;
-  margin-right: auto;
-    margin-left: 10vw; */
-  /* margin: 0 auto 80px 10vw; */
-`
-
-export const SkillBox = styled.div`
-  background: #fff;
-  padding: 30px;
-  width: 80vw;
-  max-width: 300px;
-  margin-top: 30px;
-  font-family: 'Press Start 2P', 'Roboto', sans-serif;
-  color: #555;
-  font-size: 1rem;
+  background: #000;
+  padding: 15px;
 `
 
 export const ListSkills = styled.ul``
 
 export const Skill = styled.li`
-  /* background: #fff; */
-  /* padding: 30px; */
-  width: 80vw;
-  max-width: 300px;
+  width: auto;
+  /* max-width: 300px; */
   margin-top: 30px;
   font-family: 'Press Start 2P', 'Roboto', sans-serif;
-  /* color: #555; */
-  /* font-size: 1rem; */
   list-style-type: none;
 `
 
@@ -148,7 +132,7 @@ export const ItemSkill = styled.li<IHover>`
   &:active,
   &:focus {
     > span div {
-      background: url('${props => props.backgroundHover}') no-repeat center;
+      animation: ${skeletonAnimation} 2s;
     }
   }
 `
