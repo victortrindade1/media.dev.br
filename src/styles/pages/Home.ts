@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 export const Container = styled.div`
   background: #ace4e5;
@@ -17,16 +17,25 @@ export const Container = styled.div`
   height: 90vh;
 `
 
-export const ScenarioCloud = styled.img`
-  /* width: 80px; */
-  /* position: absolute; */
-  /* top: 30vh; */
-  /* left: 30vw; */
+const cloudAnimation = keyframes`
+to {
+    right: 100%;
+    transform: translate(0);
+  }
+`
 
+export const CloudContainer = styled.div`
+  top: 15vh;
+  right: -10vw;
+  position: absolute;
+  animation: ${cloudAnimation} 100s infinite linear;
+`
+
+export const ScenarioCloud = styled.img`
   width: 30vw;
   max-width: 160px;
-  margin-top: 20vh;
-  margin-left: 20vw;
+  /* margin-top: 20vh;
+  margin-left: 20vw; */
 `
 
 export const TextContainer = styled.div`

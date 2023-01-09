@@ -78,6 +78,12 @@ export const SocialMediaContainer = styled.div`
   flex-direction: column;
   justify-content: space-around;
   padding-left: 5px;
+  align-items: center;
+
+  svg {
+    color: #000;
+    font-size: 30px;
+  }
 `
 
 export const DescriptionContainer = styled.div`
@@ -106,17 +112,76 @@ export const Subtitle = styled.div`
   color: #fff;
   font-size: 1rem;
   background: #000;
-  padding: 15px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > img {
+    width: 30px;
+    margin: 0px 10px;
+  }
 `
+
+export const StarIcon = styled.img``
 
 export const ListSkills = styled.ul``
 
 export const Skill = styled.li`
   width: auto;
   /* max-width: 300px; */
-  margin-top: 30px;
+  margin-top: 8px;
   font-family: 'Press Start 2P', 'Roboto', sans-serif;
   list-style-type: none;
+
+  .MuiAccordion-root {
+    background: #000000;
+    color: #fff;
+  }
+
+  .MuiButtonBase-root {
+    /* padding: 0; */
+
+    min-height: 30px;
+
+    svg {
+      color: #fff;
+    }
+  }
+
+  .Mui-expanded {
+    /* padding-top: 10px; */
+  }
+`
+
+export const ListSubcategories = styled.ul``
+
+export const Subcategory = styled.li`
+  list-style-type: none;
+  padding: 5px;
+  color: #999;
+
+  .MuiButtonBase-root {
+    font-size: 12px;
+  }
+
+  .MuiAccordion-root {
+    background: #000;
+    color: #999;
+  }
+
+  .MuiButtonBase-root {
+    padding: 0;
+
+    svg {
+      color: #999;
+      width: 24px;
+    }
+  }
+
+  .Mui-expanded {
+    margin: 0;
+  }
 `
 
 export const ListItems = styled.ul``

@@ -8,6 +8,7 @@ import pipe from '../assets/svg/cano.svg'
 
 import {
   Container,
+  CloudContainer,
   ScenarioCloud,
   TextContainer,
   ScenarioPipe
@@ -20,10 +21,12 @@ const Home: NextPage = () => {
   return (
     <Layout title={title} description={`${title} - ${subtitle}`}>
       <Container>
-        <ScenarioCloud src={cloudImg} alt="cloud" />
+        <CloudContainer>
+          <ScenarioCloud src={cloudImg} alt="cloud" />
+        </CloudContainer>
         <TextContainer>
           <p>
-            Hi, it&apos;s me, Mario! I gave up on saving the princess... Now I
+            It&apos;s-a me, Mario! I gave up on saving the princess... Now, I
             just want to develop websites, apps and servers.
           </p>
         </TextContainer>

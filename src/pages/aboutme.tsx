@@ -12,7 +12,7 @@ import Title from '../components/Title'
 
 import background from '../assets/svg/montanhas.svg'
 import skeleton from '../assets/svg/skeleton.svg'
-// import skeleton_dead from '../assets/svg/skeleton_dead.svg'
+import star from '../assets/svg/star_skill.svg'
 import avatar from '../assets/img/avatar.jpeg'
 
 import IResponsive from '../interfaces/IResponsive'
@@ -28,9 +28,12 @@ import {
   // FlexRowDiv,
   ListSkills,
   Skill,
+  StarIcon,
   ResponsiveDiv,
   PresentationContainer,
   SkillContainer,
+  ListSubcategories,
+  Subcategory,
   ListItems,
   ItemSkill,
   Skeleton
@@ -42,24 +45,94 @@ const subtitle =
 
 const listSkills = [
   {
-    category: 'FRONT-END',
-    items: ['React', 'React Native', 'Redux', 'NextJS', 'Typescript']
-  },
-  {
-    category: 'BACK-END',
-    items: [
-      'NodeJS',
-      'Express',
-      'Docker',
-      'MongoDB',
-      'Postgres',
-      'Redis',
-      'Insomnia'
+    category: 'LANGUAGES',
+    list: [
+      {
+        subcategory: 'Frequently used',
+        items: ['Javascript (ES6+)', 'Typescript', 'CSS']
+      },
+      {
+        subcategory: 'Less used',
+        items: ['VBA (Excel)']
+      }
     ]
   },
   {
-    category: 'STUFFS',
-    items: ['Github', 'TDD', 'SOLID']
+    category: 'FRONT-END',
+    list: [
+      {
+        subcategory: 'Frameworks',
+        items: ['React', 'React Native', 'NextJS']
+      },
+      {
+        subcategory: 'Most used libs',
+        items: [
+          'ContextAPI',
+          'Styled Components',
+          'Material UI',
+          'Axios',
+          'React-Hook-Form',
+          'ReduxToolkit',
+          'Yup'
+        ]
+      }
+    ]
+  },
+  {
+    category: 'BACK-END',
+    list: [
+      {
+        subcategory: 'Environments',
+        items: ['NodeJS']
+      },
+      {
+        subcategory: 'Frameworks',
+        items: ['ExpressJS']
+      },
+      {
+        subcategory: 'Most used libs',
+        items: [
+          'Sequelize',
+          'JWT',
+          'Bcrypt',
+          'Yup',
+          'Jest',
+          'Cors',
+          'DotEnv',
+          'Sentry',
+          'Helmet',
+          'Axios',
+          'MongoDB',
+          'Redis'
+        ]
+      }
+    ]
+  },
+  {
+    category: 'DESIGN',
+    list: [
+      {
+        subcategory: 'Web Design',
+        items: ['Figma', 'Inkscape', 'Corel Draw']
+      }
+    ]
+  },
+  {
+    category: 'OTHER STUFFS',
+    list: [
+      {
+        subcategory: 'Systems',
+        items: ['Linux', 'iOS', 'Windows']
+      },
+      {
+        subcategory: 'Web Services',
+        items: ['Docker', 'Github', 'WordPress']
+      },
+      {
+        subcategory: 'Softwares',
+        items: ['VS Code', 'Insomnia', 'Postbird']
+      }
+    ]
   }
 ]
 
@@ -77,9 +150,27 @@ const Aboutme: NextPage<IResponsive> = ({ isBreakpoint }: IResponsive) => {
             <AvatarContainer>
               <Avatar src={avatar} alt="Avatar Photo" />
               <SocialMediaContainer>
-                <GitHub fontSize={'large'} color={'info'} />
-                <LinkedIn fontSize={'large'} color={'info'} />
-                <WhatsApp fontSize={'large'} color={'info'} />
+                <a
+                  href="https://github.com/victortrindade1"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <GitHub />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/victorprogramador/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <LinkedIn />
+                </a>
+                <a
+                  href="https://wa.me/5521982148576"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <WhatsApp />
+                </a>
               </SocialMediaContainer>
             </AvatarContainer>
             <DescriptionContainer>
@@ -91,31 +182,57 @@ const Aboutme: NextPage<IResponsive> = ({ isBreakpoint }: IResponsive) => {
             </DescriptionContainer>
           </PresentationContainer>
           <SkillContainer isBreakpoint={isBreakpoint}>
-            <Subtitle>SKILLS</Subtitle>
+            <Subtitle>
+              <StarIcon src={star} alt="star" />
+              SKILLS
+              <StarIcon src={star} alt="star" />
+            </Subtitle>
             <ListSkills>
-              {listSkills.map(item => (
-                <Skill key={item.category}>
-                  <Accordion square>
+              {listSkills.map((skill, id) => (
+                <Skill key={skill.category}>
+                  <Accordion square key={id}>
                     <AccordionSummary
                       expandIcon={
                         <ArrowDropDown fontSize={'large'} color={'info'} />
                       }
                     >
-                      {item.category}
+                      {skill.category}
                     </AccordionSummary>
                     <AccordionDetails
                       sx={{ background: '#000', color: '#fff' }}
                     >
-                      <ListItems>
-                        {item.items.map((item, id) => (
-                          <ItemSkill key={id}>
-                            <span>
-                              <Skeleton background={skeleton} />
-                            </span>
-                            <div>{item}</div>
-                          </ItemSkill>
+                      <ListSubcategories>
+                        {skill.list.map((subcategory, id) => (
+                          <Subcategory key={id}>
+                            <Accordion square key={id} defaultExpanded>
+                              <AccordionSummary
+                                expandIcon={
+                                  <ArrowDropDown
+                                    fontSize={'large'}
+                                    color={'info'}
+                                  />
+                                }
+                              >
+                                {subcategory.subcategory}
+                              </AccordionSummary>
+                              <AccordionDetails
+                                sx={{ background: '#000', color: '#fff' }}
+                              >
+                                <ListItems>
+                                  {subcategory.items.map((item, id) => (
+                                    <ItemSkill key={id}>
+                                      <span>
+                                        <Skeleton background={skeleton} />
+                                      </span>
+                                      <div>{item}</div>
+                                    </ItemSkill>
+                                  ))}
+                                </ListItems>
+                              </AccordionDetails>
+                            </Accordion>
+                          </Subcategory>
                         ))}
-                      </ListItems>
+                      </ListSubcategories>
                     </AccordionDetails>
                   </Accordion>
                 </Skill>

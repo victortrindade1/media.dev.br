@@ -66,6 +66,10 @@ export const Logo = styled.div<IContainer>`
   height: 70px;
   background: url('${props => props.background}') no-repeat center;
   animation: ${logoAnimation} 5s infinite;
+
+  :hover {
+    cursor: pointer;
+  }
 `
 
 export const Shake = styled.div`

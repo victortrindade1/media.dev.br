@@ -12,5 +12,8 @@ export default createGlobalStyle<{ theme: Theme }>`
     background: ${props => props.theme.palette.primary.dark};
     color: ${props => props.theme.palette.primary.main};
     font: 400 16px Roboto, sans-serif;
+    // coloquei pra nao aparecer scrollbar na animação da nuvem
+    // Se precisar dessa scrollbar horizontal, preciso mexer na nuvem do index
+    overflow-x: hidden;
   }
 `

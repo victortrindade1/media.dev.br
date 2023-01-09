@@ -1,10 +1,8 @@
 # O q estou fazendo
 
-Agora sei fazer facilmente a logo animada. Vou fazer!
+nuvem voando
 
-Trocar o MEDIA da logo (está vindo escrito. deixar tipo bitmap, pq no celular da minha mae ficou como texto em outra fonte)
-
-fazer menu
+favicon
 
 ## Create Next App
 

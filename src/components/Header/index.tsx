@@ -1,15 +1,20 @@
 import React from 'react'
 
-import logo from '../../assets/svg/logo_mediadev.svg'
-import { Container, Logo } from './styles'
-
 import IResponsive from '../../interfaces/IResponsive'
+
+import logo from '../../assets/svg/logo_mediadev.svg'
+
+import Link from '../NoScrollLink'
 import Menu from '../Menu'
+
+import { Container, Logo } from './styles'
 
 const Header: React.FC<IResponsive> = ({ isBreakpoint }) => {
   return (
     <Container isBreakpoint={isBreakpoint}>
-      <Logo background={logo} />
+      <Link href="/">
+        <Logo background={logo} />
+      </Link>
       <Menu />
     </Container>
   )

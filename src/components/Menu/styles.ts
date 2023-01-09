@@ -51,10 +51,9 @@ export const MenuButton = styled.img`
 export const MenuContainer = styled.div``
 
 export const StyledDrawer = styled(Drawer)`
-  /* background-color: #ffffff; */
-
   .MuiBackdrop-root {
-    background-color: #ffffff00;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8.2px);
   }
 
   .MuiDrawer-paper {
