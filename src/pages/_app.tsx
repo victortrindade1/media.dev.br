@@ -6,6 +6,7 @@ import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles'
 import { AnimatePresence } from 'framer-motion'
 // // import { DefaultSeo } from 'next-seo'
 import { useMediaQuery } from '@material-ui/core'
+import NextNProgress from 'nextjs-progressbar'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -44,6 +45,33 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
             initial={false}
             onExitComplete={() => window.scrollTo(0, 0)}
           >
+            <NextNProgress
+              color="#e44b42ff"
+              options={{ showSpinner: false }}
+              transformCSS={css => {
+                // chatGPT:
+                // Find the style rule that sets the box shadow
+                const boxShadowIndex = css.indexOf('box-shadow:')
+                // Find the end of the style rule
+                const endIndex = css.indexOf(';', boxShadowIndex)
+                // Extract the style rule
+                const boxShadowRule = css.substring(
+                  boxShadowIndex,
+                  endIndex + 1
+                )
+                // Modify the box shadow
+                const modifiedBoxShadowRule = boxShadowRule.replace(
+                  'box-shadow:',
+                  'box-shadow: none'
+                )
+                // Replace the original style rule with the modified one
+                const modifiedCss = css.replace(
+                  boxShadowRule,
+                  modifiedBoxShadowRule
+                )
+                return <style>{modifiedCss}</style>
+              }}
+            />
             <Component
               {...pageProps}
               canonical={url}
