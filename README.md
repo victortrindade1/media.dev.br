@@ -1,8 +1,11 @@
 # O q estou fazendo
 
-transition page loading bar
+Page Contact
 
 favicon
+
+Deixar responsivo. Tem mt coisa q nao está bem configurada pra mobile.
+Ex: title, menu
 
 ## Create Next App
 

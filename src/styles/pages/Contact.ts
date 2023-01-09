@@ -1,7 +1,11 @@
 import styled from 'styled-components'
+interface IContainer {
+  background: any
+}
 
-export const Container = styled.div`
-  background: #ffe3b4;
+export const Container = styled.div<IContainer>`
+  background: #ffe3b4 url('${props => props.background}') repeat-x bottom;
+  background-size: 70vw;
   width: 100%;
   z-index: -1;
   position: relative;
@@ -11,4 +15,31 @@ export const Container = styled.div`
   align-items: center;
   min-height: 90vh;
   padding-top: 20vh;
+`
+
+export const Mario = styled.img`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40vw;
+`
+
+export const TextContainer = styled.div`
+  background: #000;
+  /* width: 300px; */
+  padding: 20px;
+  margin: auto;
+  position: absolute;
+  top: 40vh;
+  /* left: 0;
+  right: 0; */
+  font-family: 'Press Start 2P', 'Roboto', sans-serif;
+  color: #fff;
+  font-size: small;
+  line-height: 1.6;
+
+  width: 80vw;
+  max-width: 400px;
+  /* position: absolute; */
+  /* margin: auto; */
 `

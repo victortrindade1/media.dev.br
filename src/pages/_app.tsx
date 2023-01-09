@@ -13,6 +13,7 @@ import Footer from '../components/Footer'
 
 import GlobalStyle from '../styles/global'
 import theme from '../styles/theme'
+// import { nextNProgressStyled } from '../styles/global'
 
 function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
   const url = `https://media.dev.br${router.route}`
@@ -48,29 +49,31 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
             <NextNProgress
               color="#e44b42ff"
               options={{ showSpinner: false }}
-              transformCSS={css => {
-                // chatGPT:
-                // Find the style rule that sets the box shadow
-                const boxShadowIndex = css.indexOf('box-shadow:')
-                // Find the end of the style rule
-                const endIndex = css.indexOf(';', boxShadowIndex)
-                // Extract the style rule
-                const boxShadowRule = css.substring(
-                  boxShadowIndex,
-                  endIndex + 1
-                )
-                // Modify the box shadow
-                const modifiedBoxShadowRule = boxShadowRule.replace(
-                  'box-shadow:',
-                  'box-shadow: none'
-                )
-                // Replace the original style rule with the modified one
-                const modifiedCss = css.replace(
-                  boxShadowRule,
-                  modifiedBoxShadowRule
-                )
-                return <style>{modifiedCss}</style>
-              }}
+              // transformCSS={css => {
+              //   return <style>{css + nextNProgressStyled}</style>
+              // }}
+              //   // chatGPT:
+              //   // Find the style rule that sets the box shadow
+              //   const boxShadowIndex = css.indexOf('box-shadow:')
+              //   // Find the end of the style rule
+              //   const endIndex = css.indexOf(';', boxShadowIndex)
+              //   // Extract the style rule
+              //   const boxShadowRule = css.substring(
+              //     boxShadowIndex,
+              //     endIndex + 1
+              //   )
+              //   // Modify the box shadow
+              //   const modifiedBoxShadowRule = boxShadowRule.replace(
+              //     'box-shadow:',
+              //     'box-shadow: none'
+              //   )
+              //   // Replace the original style rule with the modified one
+              //   const modifiedCss = css.replace(
+              //     boxShadowRule,
+              //     modifiedBoxShadowRule
+              //   )
+              //   return <style>{modifiedCss}</style>
+              // }}
             />
             <Component
               {...pageProps}
