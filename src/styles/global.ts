@@ -15,6 +15,8 @@ export default createGlobalStyle<{ theme: Theme }>`
     // coloquei pra nao aparecer scrollbar na animação da nuvem
     // Se precisar dessa scrollbar horizontal, preciso mexer na nuvem do index
     overflow-x: hidden;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
   }
 `
 

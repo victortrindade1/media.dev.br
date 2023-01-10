@@ -1,6 +1,9 @@
 # O q estou fazendo
 
 Page Contact
+Fazer botoes pro zap, github...
+
+Fazer animação de moedinha qnd clica, assim como qnd clica no ? do menu
 
 favicon
 

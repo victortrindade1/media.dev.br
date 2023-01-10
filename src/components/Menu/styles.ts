@@ -6,6 +6,7 @@ const platformAnimation = keyframes`
   3% { transform:translate(0,30px) }
   7% { transform:translate(0,0) }
   9% { transform:translate(0,10px) }
+  15% { transform:translate(0,0) }
   100% { transform:translate(0,0) }
 `
 

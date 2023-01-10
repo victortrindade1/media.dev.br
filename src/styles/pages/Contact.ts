@@ -26,20 +26,37 @@ export const Mario = styled.img`
 
 export const TextContainer = styled.div`
   background: #000;
-  /* width: 300px; */
   padding: 20px;
   margin: auto;
   position: absolute;
   top: 40vh;
-  /* left: 0;
-  right: 0; */
   font-family: 'Press Start 2P', 'Roboto', sans-serif;
   color: #fff;
   font-size: small;
   line-height: 1.6;
-
   width: 80vw;
   max-width: 400px;
-  /* position: absolute; */
-  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > span {
+    padding-bottom: 30px;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+`
+
+export const IconContainer = styled.div`
+  :hover {
+    cursor: pointer;
+  }
+`
+
+export const Icon = styled.img`
+  width: 60px;
 `

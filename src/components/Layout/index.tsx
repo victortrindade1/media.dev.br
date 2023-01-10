@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
 import { NextSeo } from 'next-seo'
-import { motion } from 'framer-motion'
+
+import { MainStyled } from './styles'
 
 type Props = {
   children: ReactNode
@@ -15,13 +16,13 @@ const variants = {
 }
 
 const Layout = ({ children, title, description }: Props): JSX.Element => (
-  <div>
+  <>
     <NextSeo
       title={title}
       description={description}
       openGraph={{ title, description }}
     />
-    <motion.main
+    <MainStyled
       initial="hidden"
       animate="enter"
       exit="exit"
@@ -30,8 +31,8 @@ const Layout = ({ children, title, description }: Props): JSX.Element => (
       className=""
     >
       {children}
-    </motion.main>
-  </div>
+    </MainStyled>
+  </>
 )
 
 export default Layout
