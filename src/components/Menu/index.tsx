@@ -16,6 +16,7 @@ import {
   Container,
   Shake,
   MenuButtonContainer,
+  // CoinAnimated,
   MenuButton,
   // MenuContainer,
   StyledDrawer,
@@ -62,6 +63,9 @@ const Menu: React.FC = () => {
           isMenuOpened={isMenuOpened}
           onClick={handleToggleMenu}
         >
+          <div />
+          <div />
+          <div />
           <MenuButton src={menubutton} alt="menu" />
         </MenuButtonContainer>
       </Shake>

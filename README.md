@@ -1,10 +1,12 @@
 # O q estou fazendo
 
+animacao do bloco em vez de ser on hover, tinha q ser on click
 Page Contact
 Fazer botoes pro zap, github...
-
+2 nuvens index
 Fazer animação de moedinha qnd clica, assim como qnd clica no ? do menu
-
+som?
+interrogação animada
 favicon
 
 Deixar responsivo. Tem mt coisa q nao está bem configurada pra mobile.
