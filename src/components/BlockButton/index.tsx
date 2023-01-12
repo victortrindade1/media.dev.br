@@ -4,14 +4,19 @@ import { Container, Icon } from './styles'
 
 interface IBlockButtonContainer {
   // isClicked: boolean
-  onClick: React.MouseEventHandler<HTMLDivElement>
+  onClick?: React.MouseEventHandler<HTMLDivElement>
+  onMouseOver?: any
 }
 
 interface IBlockButton extends IBlockButtonContainer {
   icon: string
 }
 
-const BlockButton: React.FC<IBlockButton> = ({ onClick, icon }) => {
+const BlockButton: React.FC<IBlockButton> = ({
+  onClick,
+  icon,
+  onMouseOver
+}) => {
   const [isClicked, setIsClicked] = useState(false)
 
   const handleClickButton = () => {
@@ -26,6 +31,7 @@ const BlockButton: React.FC<IBlockButton> = ({ onClick, icon }) => {
         handleClickButton()
         onClick(e)
       }}
+      onMouseOver={onMouseOver}
     >
       <div />
       <div />

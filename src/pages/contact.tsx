@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+// import { useRouter } from 'next/router'
 import type { NextPage } from 'next'
 
 import Layout from '../components/Layout'
@@ -12,13 +13,22 @@ import linkedin from '../assets/svg/linkedin.svg'
 import gmail from '../assets/svg/gmail.svg'
 import github from '../assets/svg/github.svg'
 
-import { Container, Mario, TextContainer } from '../styles/pages/Contact'
+import { Container, Mario, TextContainer, Label } from '../styles/pages/Contact'
 
 const title = 'Contact'
 const subtitle = 'Do you want to hire me?'
 
 const Contact: NextPage = () => {
-  const handleClickButton = () => {}
+  const [label, setLabel] = useState('')
+
+  const handleClickButton = (e, { href }) => {
+    e.preventDefault()
+
+    setTimeout(() => {
+      // router.push(href)
+      window.open(href, '_blank')
+    }, 500)
+  }
 
   return (
     <Layout
@@ -31,11 +41,44 @@ const Contact: NextPage = () => {
         <TextContainer>
           <span>Victor Trindade</span>
           <div>
-            <BlockButton onClick={handleClickButton} icon={whatsapp} />
-            <BlockButton onClick={handleClickButton} icon={gmail} />
-            <BlockButton onClick={handleClickButton} icon={linkedin} />
-            <BlockButton onClick={handleClickButton} icon={github} />
+            <BlockButton
+              onClick={event =>
+                handleClickButton(event, {
+                  href: 'https://wa.me/5521982148576'
+                })
+              }
+              onMouseOver={() => setLabel('+55 21 98214-8576')}
+              icon={whatsapp}
+            />
+            <BlockButton
+              onClick={event =>
+                handleClickButton(event, {
+                  href: 'mailto:victortrindade@gmail.com'
+                })
+              }
+              onMouseOver={() => setLabel('victortrindade@gmail.com')}
+              icon={gmail}
+            />
+            <BlockButton
+              onClick={event =>
+                handleClickButton(event, {
+                  href: 'https://www.linkedin.com/in/victorprogramador/'
+                })
+              }
+              onMouseOver={() => setLabel('linkedin.com/in/victorprogramador')}
+              icon={linkedin}
+            />
+            <BlockButton
+              onClick={event =>
+                handleClickButton(event, {
+                  href: 'https://github.com/victortrindade1'
+                })
+              }
+              onMouseOver={() => setLabel('github.com/victortrindade1')}
+              icon={github}
+            />
           </div>
+          <Label>{label}</Label>
         </TextContainer>
       </Container>
     </Layout>

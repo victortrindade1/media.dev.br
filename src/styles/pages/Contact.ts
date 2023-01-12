@@ -54,3 +54,8 @@ export const TextContainer = styled.div`
     width: 60px;
   }
 `
+
+export const Label = styled.div`
+  padding-top: 20px;
+  font-size: 11px;
+`
