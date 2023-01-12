@@ -3,6 +3,7 @@ import type { NextPage } from 'next'
 
 import Layout from '../components/Layout'
 import Title from '../components/Title'
+import BlockButton from '../components/BlockButton'
 
 import background from '../assets/svg/contact_scenario.svg'
 import explodedMario from '../assets/svg/exploded_mario.svg'
@@ -11,21 +12,13 @@ import linkedin from '../assets/svg/linkedin.svg'
 import gmail from '../assets/svg/gmail.svg'
 import github from '../assets/svg/github.svg'
 
-import {
-  Container,
-  Mario,
-  TextContainer,
-  IconContainer,
-  Icon
-} from '../styles/pages/Contact'
+import { Container, Mario, TextContainer } from '../styles/pages/Contact'
 
 const title = 'Contact'
 const subtitle = 'Do you want to hire me?'
 
 const Contact: NextPage = () => {
-  const handleClick = () => {
-    return console.log('ui')
-  }
+  const handleClickButton = () => {}
 
   return (
     <Layout
@@ -38,18 +31,10 @@ const Contact: NextPage = () => {
         <TextContainer>
           <span>Victor Trindade</span>
           <div>
-            <IconContainer onClick={handleClick}>
-              <Icon src={whatsapp} alt="whatsapp" />
-            </IconContainer>
-            <IconContainer>
-              <Icon src={gmail} alt="e-mail" />
-            </IconContainer>
-            <IconContainer>
-              <Icon src={linkedin} alt="linkedin" />
-            </IconContainer>
-            <IconContainer>
-              <Icon src={github} alt="github" />
-            </IconContainer>
+            <BlockButton onClick={handleClickButton} icon={whatsapp} />
+            <BlockButton onClick={handleClickButton} icon={gmail} />
+            <BlockButton onClick={handleClickButton} icon={linkedin} />
+            <BlockButton onClick={handleClickButton} icon={github} />
           </div>
         </TextContainer>
       </Container>

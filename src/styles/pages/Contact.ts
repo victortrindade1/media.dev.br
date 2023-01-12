@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 interface IContainer {
   background: any
 }
@@ -49,25 +49,8 @@ export const TextContainer = styled.div`
     justify-content: space-evenly;
     width: 100%;
   }
-`
 
-const iconAnimation = keyframes`
-  0% { transform:translate(0,0) }
-  1% { transform:translate(0,-10px) }
-  2% { transform:translate(0,10px) }
-  6% { transform:translate(0,0) }
-  100% { transform:translate(0,0) }
-`
-// animação de pular embaixo do bloco
-// sobe, desce, sobe mais alto, desce, porpurina sumindo e número 10 subindo
-
-export const IconContainer = styled.div`
-  :hover {
-    cursor: pointer;
-    animation: ${iconAnimation} 5s ease;
+  img {
+    width: 60px;
   }
-`
-
-export const Icon = styled.img`
-  width: 60px;
 `

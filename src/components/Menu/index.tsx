@@ -15,16 +15,14 @@ import Link from '../NoScrollLink'
 import {
   Container,
   Shake,
-  MenuButtonContainer,
-  // CoinAnimated,
-  MenuButton,
-  // MenuContainer,
+  ButtonContainer,
   StyledDrawer,
   MenuBackgroundBottom,
   MenuBackgroundTop,
   MenuItemContainer,
   ItemIcon
 } from './styles'
+import BlockButton from '../BlockButton'
 
 const links: { name: string; href: string; icon: string }[] = [
   {
@@ -59,22 +57,19 @@ const Menu: React.FC = () => {
   return (
     <Container>
       <Shake>
-        <MenuButtonContainer
-          isMenuOpened={isMenuOpened}
-          onClick={handleToggleMenu}
-        >
-          <div />
-          <div />
-          <div />
-          <MenuButton src={menubutton} alt="menu" />
-        </MenuButtonContainer>
+        <ButtonContainer>
+          <BlockButton
+            // isClicked={isMenuOpened}
+            onClick={handleToggleMenu}
+            icon={menubutton}
+          />
+        </ButtonContainer>
       </Shake>
       <StyledDrawer
         anchor={'bottom'}
         open={isMenuOpened}
         onClose={handleToggleMenu}
       >
-        {/* <MenuContainer> */}
         <MenuBackgroundTop background={menuTop} />
         <MenuBackgroundBottom background={menuBottom}>
           <nav>
@@ -91,8 +86,6 @@ const Menu: React.FC = () => {
             ))}
           </nav>
         </MenuBackgroundBottom>
-
-        {/* </MenuContainer> */}
       </StyledDrawer>
     </Container>
   )

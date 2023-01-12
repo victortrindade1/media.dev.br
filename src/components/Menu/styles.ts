@@ -1,84 +1,6 @@
 import { Drawer } from '@material-ui/core'
 import styled, { keyframes } from 'styled-components'
 
-import moeda1 from '../../assets/svg/moeda1.svg'
-import moeda2 from '../../assets/svg/moeda2.svg'
-import moeda3 from '../../assets/svg/moeda3.svg'
-import moeda4 from '../../assets/svg/moeda4.svg'
-
-const coin3Animation = keyframes`
-  0% {
-    opacity: 0;
-   }
-  10% {
-    opacity: 0;
-  }
-  12% {
-    opacity: 1;
-  }
-  20% {
-    top: -120px;
-  }
-  22% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-`
-
-const coin2Animation = keyframes`
-  0% {
-    opacity: 0
-   }
-   4% {
-    opacity: 0
-   }
-   8% {
-     opacity: 1
-   }
-   25% {
-    opacity: 0
-   }
-   100% {
-     opacity: 0
-   }
-`
-
-const coinAnimation = keyframes`
-  0% {
-    background: url(${moeda2}) no-repeat center;
-    opacity: 1
-   }
-  2% {
-    top: -90px
-  }
-  2.01% {
-    background: url(${moeda1}) no-repeat center;
-    top: -90px
-  }
-  4% {
-    top: -100px;
-  }
-  4.01% {
-    background: url(${moeda2}) no-repeat center;
-    top: -100px;
-  }
-  6% {
-    top: -120px;
-  }
-  8% {
-    top: -100px;
-    opacity: 1
-  }
-  8.01% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-`
-
 const platformAnimation = keyframes`
   0% { transform:translate(0,0) }
   3% { transform:translate(0,30px) }
@@ -109,66 +31,11 @@ export const Shake = styled.div`
   transform-origin: 50% 50%;
 `
 
-interface IMenu {
-  readonly isMenuOpened: boolean
-}
-
-// export const CoinAnimated = styled.div``
-
-export const MenuButtonContainer = styled.div<IMenu>`
+export const ButtonContainer = styled.div`
   position: fixed;
   top: 24vh;
   right: 10vw;
-
-  /* > div + div {
-    background-color: #123456;
-    height: 50px;
-  } */
-
-  > div + div {
-    background: url(${moeda3}) no-repeat;
-    position: absolute;
-    top: -70px;
-    right: -15px;
-    width: 100%;
-    height: 60px;
-    opacity: 0;
-    /* background-color: #12345650; */
-  }
-
-  > div + div + div {
-    background: url(${moeda4}) no-repeat;
-    position: absolute;
-    top: -70px;
-    right: -30px;
-    width: 100%;
-    height: 60px;
-    opacity: 0;
-  }
-
-  :hover {
-    cursor: pointer;
-  }
-  > div {
-    animation: ${props => props.isMenuOpened && coinAnimation} 5s ease-in;
-    position: absolute;
-    top: -75px;
-    width: 100%;
-    min-height: 100px;
-  }
-  > div + div {
-    animation: ${props => props.isMenuOpened && coin2Animation} 5s ease-in;
-  }
-  > div + div + div {
-    animation: ${props => props.isMenuOpened && coin3Animation} 5s ease-in;
-  }
 `
-
-export const MenuButton = styled.img`
-  width: 50px;
-`
-
-export const MenuContainer = styled.div``
 
 export const StyledDrawer = styled(Drawer)`
   .MuiBackdrop-root {
