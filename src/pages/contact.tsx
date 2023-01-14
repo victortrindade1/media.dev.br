@@ -27,7 +27,7 @@ const Contact: NextPage = () => {
     setTimeout(() => {
       // router.push(href)
       window.open(href, '_blank')
-    }, 500)
+    }, 1000)
   }
 
   return (

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 20.407 19.002" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<filter id="c" x="-1.0074e-5" y="-1.1638e-5" width="1" height="1" color-interpolation-filters="sRGB">
+<feGaussianBlur stdDeviation="6.5338697e-05"/>
+</filter>
+<filter id="b" x="0" y="0" width="1" height="1" color-interpolation-filters="sRGB">
+<feGaussianBlur stdDeviation="8.9130634e-20"/>
+</filter>
+<filter id="a" x="-4.6026e-6" y="-5.015e-6" width="1" height="1" color-interpolation-filters="sRGB">
+<feGaussianBlur stdDeviation="2.0727186e-05"/>
+</filter>
+</defs>
+<g transform="translate(-103.06 -66.008)">
+<g transform="translate(-1.361 -105.36)">
+<g transform="matrix(1.311 0 0 1.4102 -9.1328 66.84)" fill-opacity=".99608">
+<g transform="translate(14.129,9.844)" fill="#010100" filter="url(#c)" opacity=".996">
+<rect x="74.75" y="64.28" width="11.328" height="13.474" opacity=".996" stroke-width=".265"/>
+<rect x="73.377" y="65.395" width="13.695" height="11.269" opacity=".996" stroke-width=".27484"/>
+<rect x="72.487" y="65.986" width="15.566" height="10.072" opacity=".996" stroke-width=".265"/>
+</g>
+<g transform="translate(13.991,9.7931)" fill="#725525" filter="url(#b)" stroke-width=".265">
+<rect x="73.616" y="65.925" width="13.582" height="10.133" opacity=".996"/>
+<rect x="74.715" y="65.314" width="11.354" height="11.506" opacity=".996"/>
+</g>
+<g transform="translate(14.418,10.19)" fill="#d3a24f" stroke-width=".265">
+<rect x="73.677" y="65.955" width="12.605" height="9.4614" opacity=".996"/>
+<rect x="74.745" y="65.284" width="10.682" height="10.774" opacity=".996"/>
+</g>
+<g transform="translate(14.436,10.434)" fill="#f8db50" filter="url(#a)">
+<rect x="74.559" y="66.657" width="10.808" height="7.7828" opacity=".996" stroke-width=".26655"/>
+<rect x="75.447" y="65.467" width="9.0647" height="9.9192" opacity=".996" stroke-width=".265"/>
+</g>
+<g transform="translate(14.185,10.068)" fill="#f1eefc" opacity=".996" stroke-width=".265">
+<rect x="73.891" y="69.282" width=".76302" height="1.0072" opacity=".996"/>
+<rect x="73.891" y="66.016" width=".8851" height="2.4722" opacity=".996"/>
+<rect x="74.684" y="65.406" width=".7325" height="1.2514" opacity=".996"/>
+<rect x="75.417" y="65.406" width="2.1685" height=".84902" opacity=".996"/>
+</g>
+</g>
+<g transform="matrix(4.9549 0 0 5.33 -619.76 -397.53)">
+<rect x="147.02" y="107.54" width=".24132" height=".95351" fill="#010100" fill-opacity=".98824" opacity=".996" stroke-width=".070115"/>
+<rect x="146.82" y="107.83" width=".20012" height=".36491" fill="#010100" fill-opacity=".98824" opacity=".996" stroke-width=".070115"/>
+<rect x="147.74" y="108.84" width=".85934" height=".94173" fill="#010100" fill-opacity=".98824" opacity=".996" stroke-width=".070115"/>
+<rect x="147.54" y="109.14" width="1.289" height=".35314" fill="#010100" fill-opacity=".98824" opacity=".996" stroke-width=".070115"/>
+<rect x="147.54" y="107.3" width="1.5009" height="1.5421" fill="#010100" fill-opacity=".98824" opacity=".996" stroke-width=".070115"/>
+<rect x="149" y="107.53" width=".31194" height="1.1124" fill="#010100" fill-opacity=".98824" opacity=".996" stroke-width=".070115"/>
+<rect x="149.29" y="107.83" width=".25898" height=".62389" fill="#010100" fill-opacity=".98824" opacity=".996" stroke-width=".070115"/>
+<rect x="147.26" y="107.3" width=".28252" height="1.1948" fill="#010100" fill-opacity=".98824" opacity=".996" stroke-width=".070115"/>
+<rect x="147.03" y="107.85" width=".74083" height=".39121" fill="#f1eefb" opacity=".996" stroke-width=".070115"/>
+<rect x="147.27" y="107.57" width="1.748" height=".42452" fill="#f1eefb" opacity=".996" stroke-width=".070115"/>
+<rect x="148.57" y="107.85" width=".76578" height=".61598" fill="#f1eefb" opacity=".996" stroke-width=".070115"/>
+<rect x="147.74" y="108.45" width="1.3152" height=".19145" fill="#f1eefb" opacity=".996" stroke-width=".070115"/>
+<rect x="147.74" y="108.57" width=".81574" height=".31513" fill="#f1eefb" opacity=".996" stroke-width=".080111"/>
+<rect x="147.74" y="109.12" width=".82407" height=".39955" fill="#f1eefb" opacity=".996" stroke-width=".070115"/>
+</g>
+</g>
+</g>
+</svg>

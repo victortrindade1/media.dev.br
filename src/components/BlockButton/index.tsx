@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { Container, Icon } from './styles'
+import { Container, Icon, BaseButton, Moeda, Brilho, Numero } from './styles'
 
 interface IBlockButtonContainer {
   // isClicked: boolean
@@ -10,12 +10,14 @@ interface IBlockButtonContainer {
 
 interface IBlockButton extends IBlockButtonContainer {
   icon: string
+  isMenu?: boolean
 }
 
 const BlockButton: React.FC<IBlockButton> = ({
   onClick,
   icon,
-  onMouseOver
+  onMouseOver,
+  isMenu
 }) => {
   const [isClicked, setIsClicked] = useState(false)
 
@@ -33,10 +35,12 @@ const BlockButton: React.FC<IBlockButton> = ({
       }}
       onMouseOver={onMouseOver}
     >
-      <div />
-      <div />
-      <div />
-      <Icon src={icon} alt="icon" />
+      <Moeda isClicked={isClicked} />
+      <Brilho isClicked={isClicked} />
+      <Numero isClicked={isClicked} />
+      <BaseButton isMenu={isMenu}>
+        {!isMenu && <Icon src={icon} alt="icon" />}
+      </BaseButton>
     </Container>
   )
 }

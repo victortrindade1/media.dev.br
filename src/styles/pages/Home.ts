@@ -31,11 +31,21 @@ export const CloudContainer = styled.div`
   animation: ${cloudAnimation} 100s infinite linear;
 `
 
+export const CloudContainer2 = styled.div`
+  top: 30vh;
+  right: -13vw;
+  position: absolute;
+  animation: ${cloudAnimation} 500s infinite linear;
+`
+
 export const ScenarioCloud = styled.img`
   width: 30vw;
   max-width: 160px;
-  /* margin-top: 20vh;
-  margin-left: 20vw; */
+`
+
+export const ScenarioCloud2 = styled.img`
+  width: 15vw;
+  max-width: 100px;
 `
 
 export const TextContainer = styled.div`

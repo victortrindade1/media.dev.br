@@ -9,7 +9,9 @@ import pipe from '../assets/svg/cano.svg'
 import {
   Container,
   CloudContainer,
+  CloudContainer2,
   ScenarioCloud,
+  ScenarioCloud2,
   TextContainer,
   ScenarioPipe
 } from '../styles/pages/Home'
@@ -24,6 +26,9 @@ const Home: NextPage = () => {
         <CloudContainer>
           <ScenarioCloud src={cloudImg} alt="cloud" />
         </CloudContainer>
+        <CloudContainer2>
+          <ScenarioCloud2 src={cloudImg} alt="cloud" />
+        </CloudContainer2>
         <TextContainer>
           <p>
             It&apos;s-a me, Mario! I gave up on saving the princess... Now, I

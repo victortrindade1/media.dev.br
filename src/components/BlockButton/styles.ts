@@ -5,10 +5,14 @@ import moeda1 from '../../assets/svg/moeda1.svg'
 import moeda2 from '../../assets/svg/moeda2.svg'
 import moeda3 from '../../assets/svg/moeda3.svg'
 import moeda4 from '../../assets/svg/moeda4.svg'
+import button1 from '../../assets/svg/button1.svg'
+import button2 from '../../assets/svg/button2.svg'
+import button3 from '../../assets/svg/button3.svg'
+import button4 from '../../assets/svg/button4.svg'
 
 interface IBlockButtonContainer {
   isClicked: boolean
-  onClick: React.MouseEventHandler<HTMLDivElement>
+  onClick?: React.MouseEventHandler<HTMLDivElement>
 }
 
 const iconAnimation = keyframes`
@@ -92,43 +96,80 @@ const coinAnimation = keyframes`
   }
 `
 
+const interrogationAnimation = keyframes`
+  0% {
+    background: url(${button1}) no-repeat center;
+  }
+  24.999% {
+    background: url(${button1}) no-repeat center;
+  }
+  25% {
+    background: url(${button2}) no-repeat center;
+  }
+  49.999% {
+    background: url(${button2}) no-repeat center;
+  }
+  50% {
+    background: url(${button3}) no-repeat center;
+  }
+  74.999% {
+    background: url(${button3}) no-repeat center;
+  }
+  75% {
+    background: url(${button4}) no-repeat center;
+  }
+  99.999% {
+    background: url(${button4}) no-repeat center;
+  }
+`
+
 export const Container = styled.div<IBlockButtonContainer>`
   position: relative;
   animation: ${props => props.isClicked && iconAnimation} 5s ease;
 
-  > div {
-    animation: ${props => props.isClicked && coinAnimation} 5s ease-in;
-    position: absolute;
-    top: -75px;
-    width: 100%;
-    min-height: 100px;
-  }
-
-  > div + div {
-    animation: ${props => props.isClicked && coin2Animation} 5s ease-in;
-    background: url(${moeda3}) no-repeat center;
-    position: absolute;
-    top: -90px;
-    right: 0px;
-    width: 100%;
-    height: 60px;
-    opacity: 0;
-  }
-
-  > div + div + div {
-    animation: ${props => props.isClicked && coin3Animation} 5s ease-in;
-    background: url(${moeda4}) no-repeat center;
-    position: absolute;
-    top: -90px;
-    right: -15px;
-    width: 100%;
-    height: 60px;
-    opacity: 0;
-  }
-
   :hover {
     cursor: pointer;
   }
+`
+
+export const Moeda = styled.div<IBlockButtonContainer>`
+  animation: ${props => props.isClicked && coinAnimation} 5s ease-in;
+  position: absolute;
+  top: -75px;
+  width: 100%;
+  min-height: 100px;
+`
+
+export const Brilho = styled.div<IBlockButtonContainer>`
+  animation: ${props => props.isClicked && coin2Animation} 5s ease-in;
+  background: url(${moeda3}) no-repeat center;
+  position: absolute;
+  top: -90px;
+  right: 0px;
+  width: 100%;
+  height: 60px;
+  opacity: 0;
+`
+export const Numero = styled.div<IBlockButtonContainer>`
+  animation: ${props => props.isClicked && coin3Animation} 5s ease-in;
+  background: url(${moeda4}) no-repeat center;
+  position: absolute;
+  top: -90px;
+  right: -15px;
+  width: 100%;
+  height: 60px;
+  opacity: 0;
+`
+
+interface IIsMenu {
+  isMenu: boolean
+}
+
+export const BaseButton = styled.div<IIsMenu>`
+  animation: ${props => props.isMenu && interrogationAnimation} 0.5s linear
+    infinite;
+  width: 50px;
+  height: 50px;
 `
 
 export const Icon = styled.img`

@@ -58,11 +58,7 @@ const Menu: React.FC = () => {
     <Container>
       <Shake>
         <ButtonContainer>
-          <BlockButton
-            // isClicked={isMenuOpened}
-            onClick={handleToggleMenu}
-            icon={menubutton}
-          />
+          <BlockButton isMenu onClick={handleToggleMenu} icon={menubutton} />
         </ButtonContainer>
       </Shake>
       <StyledDrawer
