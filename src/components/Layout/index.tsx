@@ -27,7 +27,7 @@ const Layout = ({ children, title, description }: Props): JSX.Element => {
       setTimeout(() => {
         setLeftPosition(e.pageX)
         setTopPosition(e.pageY)
-      }, 3000)
+      }, 5000)
     } else {
       setLeftPosition(e.pageX)
       setTopPosition(e.pageY)

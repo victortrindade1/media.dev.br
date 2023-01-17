@@ -49,7 +49,7 @@ const listSkills = [
     list: [
       {
         subcategory: 'Frequently used',
-        items: ['Javascript (ES6+)', 'Typescript', 'CSS']
+        items: ['Typescript', 'Javascript (ES6+)', 'HTML/CSS']
       },
       {
         subcategory: 'Less used',

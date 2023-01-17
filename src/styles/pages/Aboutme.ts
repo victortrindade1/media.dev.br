@@ -102,8 +102,7 @@ export const SkillContainer = styled.div<IResponsive>`
   justify-content: center;
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
-
+  margin-bottom: ${props => (props.isBreakpoint ? '150px' : '50px')};
   margin-left: ${props => !props.isBreakpoint && '10vw'};
 `
 

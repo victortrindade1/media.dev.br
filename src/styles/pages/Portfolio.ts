@@ -1,8 +1,11 @@
 import styled from 'styled-components'
 import fruit from '../../assets/svg/fruit.svg'
+import background from '../../assets/svg/fundo_portfolio.svg'
+import IResponsive from '../../interfaces/IResponsive'
 
-export const Container = styled.div`
-  background: #156500;
+export const Container = styled.div<IResponsive>`
+  background: #156500 url(${background}) repeat-x;
+  background-size: ${props => props.isBreakpoint && 'cover'};
   width: 100%;
   z-index: -1;
   /* position: relative; */

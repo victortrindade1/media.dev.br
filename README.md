@@ -1,12 +1,6 @@
 # O q estou fazendo
 
-Sol perseguindo
-https://stackoverflow.com/questions/33675038/attemping-to-get-a-div-to-follow-cursor-on-mousemove-but-with-a-delay
-
-favicon
-
-Deixar responsivo. Tem mt coisa q nao está bem configurada pra mobile.
-Ex: title, menu
+Portfolio
 
 ## Create Next App
 

@@ -19,6 +19,7 @@ import {
   ListPortfolio,
   ItemPortfolio
 } from '../styles/pages/Portfolio'
+import IResponsive from '../interfaces/IResponsive'
 
 const title = 'Portfolio'
 const subtitle = 'Only awesome pages!'
@@ -33,13 +34,13 @@ const listPortfolio = [
   }
 ]
 
-const Portfolio: NextPage = () => {
+const Portfolio: NextPage<IResponsive> = ({ isBreakpoint }: IResponsive) => {
   return (
     <Layout
       title={`${title} - Media Dev`}
       description={`${title} - ${subtitle}`}
     >
-      <Container>
+      <Container isBreakpoint={isBreakpoint}>
         <Title title="Portfolio" isLight />
         <PortfolioContainer>
           <ListPortfolio>
