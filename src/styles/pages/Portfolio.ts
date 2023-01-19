@@ -52,7 +52,7 @@ export const ItemPortfolio = styled.li`
   .MuiAccordion-root {
     background: #000000;
     color: #fff;
-    min-width: 70vw;
+    width: 70vw;
   }
 
   .MuiButtonBase-root {
@@ -91,40 +91,53 @@ export const Skill = styled.li`
   padding: 10px;
   font-size: 10px;
   color: #eec744;
+
+  :hover {
+    color: #555;
+    transition: color 0.3s ease;
+    cursor: default;
+  }
 `
 
-export const Grid = styled.div`
+export const Grid = styled.div<IResponsive>`
   display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-columns: ${props =>
+    props.isBreakpoint ? '1fr' : '0.5fr 1fr 1fr'};
   font-size: 10px;
-  padding: 10px 10px 0 10px;
-  background: #555;
+  padding: 10px;
+  background: #333;
 `
 
 export const GridColumn = styled.div``
 
-export const GridTitle = styled.div``
-
-export const GridBody = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  /* padding-left: 20px; */
-  min-height: 30vh;
+export const GridTitle = styled.div`
+  padding-bottom: 10px;
 `
 
-export const LinkContainer = styled.div`
-  padding-left: 2vw;
+export const GridBody = styled.div<IResponsive>`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  flex: 1;
+  align-items: ${props => (props.isBreakpoint ? 'center' : 'flex-start')};
+  /* height: 100%; */
+  /* padding-left: 20px; */
+  /* min-height: 30vh; */
+`
+
+export const LinkContainer = styled.div<IResponsive>`
+  padding-left: ${props => !props.isBreakpoint && '2vw'};
+  display: flex;
+  flex-direction: ${props => (props.isBreakpoint ? 'row' : 'column')};
+  justify-content: ${props =>
+    props.isBreakpoint ? 'flex-end' : 'space-evenly'};
+  height: ${props => (props.isBreakpoint ? '40px' : '29vh')};
+  width: ${props => props.isBreakpoint && '100%'};
 
   a,
   a:visited,
   a:active {
     color: inherit;
+    padding-right: ${props => props.isBreakpoint && '10px'};
   }
   a:hover {
     color: #eec744;
@@ -132,18 +145,19 @@ export const LinkContainer = styled.div`
   }
 `
 
-export const MobileScreenContainer = styled.div`
+export const MobileScreenContainer = styled.div<IResponsive>`
   height: 25vh;
-  width: 17vh;
+  /* width: 17vh; */
   background: #999;
   border-radius: 8px;
   overflow: hidden;
   background: center;
+  margin-bottom: ${props => props.isBreakpoint && '15px'};
 `
 
 export const DesktopScreenContainer = styled.div`
-  height: 25vh;
-  width: 100%;
+  /* height: 25vh; */
+  /* width: 100%; */
   background: #999;
   overflow: hidden;
   background: center;

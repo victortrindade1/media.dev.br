@@ -1,6 +1,6 @@
 # O q estou fazendo
 
-Portfolio grid tem q ser responsivo
+Portfolio grid tem q ser responsivo. A parte desktop tb tá mal configurada.
 
 ## Create Next App
 

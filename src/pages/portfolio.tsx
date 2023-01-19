@@ -86,32 +86,31 @@ const Portfolio: NextPage<IResponsive> = ({ isBreakpoint }: IResponsive) => {
                           <Skill key={skill}>{skill}</Skill>
                         ))}
                       </ItemSkills>
-                      <Grid>
+                      <Grid isBreakpoint={isBreakpoint}>
                         <GridColumn>
-                          <GridTitle>Links:</GridTitle>
-                          <GridBody>
-                            <LinkContainer>
+                          <GridBody isBreakpoint={isBreakpoint}>
+                            <LinkContainer isBreakpoint={isBreakpoint}>
                               <a
-                                href="https://github.com/victortrindade1/ultraoral-web"
-                                target="_blank"
-                                rel="noreferrer"
-                              >
-                                <GitHub />
-                              </a>
-                              <a
-                                href="https://genteodontologia-web.vercel.app/"
+                                href={item.links.url}
                                 target="_blank"
                                 rel="noreferrer"
                               >
                                 <OpenInNew />
+                              </a>
+                              <a
+                                href={item.links.github}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                <GitHub />
                               </a>
                             </LinkContainer>
                           </GridBody>
                         </GridColumn>
                         <GridColumn>
                           <GridTitle>Mobile:</GridTitle>
-                          <GridBody>
-                            <MobileScreenContainer>
+                          <GridBody isBreakpoint={isBreakpoint}>
+                            <MobileScreenContainer isBreakpoint={isBreakpoint}>
                               <MobileScreen
                                 src={item.gifs.mobile}
                                 alt="Mobile screen"
@@ -121,7 +120,7 @@ const Portfolio: NextPage<IResponsive> = ({ isBreakpoint }: IResponsive) => {
                         </GridColumn>
                         <GridColumn>
                           <GridTitle>Desktop:</GridTitle>
-                          <GridBody>
+                          <GridBody isBreakpoint={isBreakpoint}>
                             <DesktopScreenContainer>
                               <DesktopScreen
                                 src={item.gifs.desktop}

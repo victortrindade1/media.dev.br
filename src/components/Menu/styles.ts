@@ -51,11 +51,12 @@ export const StyledDrawer = styled(Drawer)`
 
 interface IContainer {
   background: any
+  isBreakpoint?: boolean
 }
 
 export const MenuBackgroundBottom = styled.div<IContainer>`
   background: url('${props => props.background}') repeat center;
-  height: 18vh;
+  height: ${props => (props.isBreakpoint ? '15vh' : '19vh')};
 
   > nav {
     display: flex;

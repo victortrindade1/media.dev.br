@@ -23,6 +23,7 @@ import {
   ItemIcon
 } from './styles'
 import BlockButton from '../BlockButton'
+import IResponsive from '../../interfaces/IResponsive'
 
 const links: { name: string; href: string; icon: string }[] = [
   {
@@ -47,7 +48,7 @@ const links: { name: string; href: string; icon: string }[] = [
   }
 ]
 
-const Menu: React.FC = () => {
+const Menu: React.FC<IResponsive> = ({ isBreakpoint }) => {
   const [isMenuOpened, setIsMenuOpened] = useState(false)
 
   const handleToggleMenu = () => {
@@ -67,7 +68,10 @@ const Menu: React.FC = () => {
         onClose={handleToggleMenu}
       >
         <MenuBackgroundTop background={menuTop} />
-        <MenuBackgroundBottom background={menuBottom}>
+        <MenuBackgroundBottom
+          background={menuBottom}
+          isBreakpoint={isBreakpoint}
+        >
           <nav>
             {links.map(({ name, href, icon }) => (
               <Link key={href} href={href}>

@@ -15,7 +15,7 @@ const Header: React.FC<IResponsive> = ({ isBreakpoint }) => {
       <Link href="/">
         <Logo background={logo} />
       </Link>
-      <Menu />
+      <Menu isBreakpoint={isBreakpoint} />
     </Container>
   )
 }
