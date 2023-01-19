@@ -1,6 +1,6 @@
 # O q estou fazendo
 
-Portfolio
+Portfolio grid tem q ser responsivo
 
 ## Create Next App
 

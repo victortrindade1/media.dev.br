@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 export const MainStyled = styled(motion.main)`
   height: 0;
+  /* position: relative; */
 `
 
 interface IBadSunContainer {

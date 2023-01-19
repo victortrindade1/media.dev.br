@@ -48,4 +48,111 @@ export const ItemPortfolio = styled.li`
     padding-right: 8px;
     /* width: 23px; */
   }
+
+  .MuiAccordion-root {
+    background: #000000;
+    color: #fff;
+    min-width: 70vw;
+  }
+
+  .MuiButtonBase-root {
+    /* padding: 0; */
+
+    min-height: 30px;
+
+    svg {
+      color: #fff;
+    }
+  }
+
+  .MuiAccordionDetails-root {
+    /* padding: 8px 16px 0px 16px; */
+  }
+`
+
+export const ItemContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+export const ItemDescription = styled.div`
+  font-size: 12px;
+  color: #999;
+  padding: 0px 16px 16px;
+`
+
+export const ItemSkills = styled.ul`
+  list-style: none;
+  padding-bottom: 16px;
+`
+
+export const Skill = styled.li`
+  float: left;
+  padding: 10px;
+  font-size: 10px;
+  color: #eec744;
+`
+
+export const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  font-size: 10px;
+  padding: 10px 10px 0 10px;
+  background: #555;
+`
+
+export const GridColumn = styled.div``
+
+export const GridTitle = styled.div``
+
+export const GridBody = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  /* padding-left: 20px; */
+  min-height: 30vh;
+`
+
+export const LinkContainer = styled.div`
+  padding-left: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+
+  a,
+  a:visited,
+  a:active {
+    color: inherit;
+  }
+  a:hover {
+    color: #eec744;
+    transition: color 1s ease;
+  }
+`
+
+export const MobileScreenContainer = styled.div`
+  height: 25vh;
+  width: 17vh;
+  background: #999;
+  border-radius: 8px;
+  overflow: hidden;
+  background: center;
+`
+
+export const DesktopScreenContainer = styled.div`
+  height: 25vh;
+  width: 100%;
+  background: #999;
+  overflow: hidden;
+  background: center;
+`
+
+export const MobileScreen = styled.img`
+  height: 25vh;
+`
+
+export const DesktopScreen = styled.img`
+  height: 25vh;
 `
