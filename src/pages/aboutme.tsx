@@ -72,7 +72,7 @@ const listSkills = [
           'Material UI',
           'Axios',
           'React-Hook-Form',
-          'ReduxToolkit',
+          'Redux',
           'Yup'
         ]
       }
@@ -139,7 +139,7 @@ const listSkills = [
 const Aboutme: NextPage<IResponsive> = ({ isBreakpoint }: IResponsive) => {
   return (
     <Layout
-      title={`${title} - Media Dev`}
+      title={`${title} - MEDIA DEV`}
       description={`${title} - ${subtitle}`}
     >
       <Container background={background}>
@@ -176,8 +176,8 @@ const Aboutme: NextPage<IResponsive> = ({ isBreakpoint }: IResponsive) => {
             <DescriptionContainer>
               <p>
                 Actually, I&apos;m not Mario... My name is Victor Trindade.
-                I&apos;m a software developer at Rio de Janeiro, Brazil. If
-                you&apos;re interested, please contact me!
+                I&apos;m a fullstack software developer at Rio de Janeiro,
+                Brazil. If you&apos;re interested, please contact me!
               </p>
             </DescriptionContainer>
           </PresentationContainer>

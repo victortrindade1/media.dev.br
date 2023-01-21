@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-// import { Drawer } from '@material-ui/core'
+// import fileDownload from 'js-file-download';
 
 import menubutton from '../../assets/svg/menubutton.svg'
 import menuTop from '../../assets/svg/agua_menu_cima.svg'
@@ -9,7 +9,7 @@ import itemIconYellow from '../../assets/svg/exclamacao_amarela.svg'
 import itemIconPurple from '../../assets/svg/exclamacao_roxa.svg'
 import itemIconGreen from '../../assets/svg/exclamacao_verde.svg'
 import itemIconRed from '../../assets/svg/exclamacao_vermelha.svg'
-
+// import curriculo from '../../assets/pdf/curriculo.pdf'
 import Link from '../NoScrollLink'
 
 import {
@@ -43,13 +43,17 @@ const links: { name: string; href: string; icon: string }[] = [
   },
   {
     name: 'Resume',
-    href: '/resume',
+    href: '/resume.pdf',
     icon: itemIconPurple
   }
 ]
 
 const Menu: React.FC<IResponsive> = ({ isBreakpoint }) => {
   const [isMenuOpened, setIsMenuOpened] = useState(false)
+
+  // const handleDownloadPdf = () => {
+  //   fileDownload(curriculo, 'VictorTrindade.pdf')
+  // }
 
   const handleToggleMenu = () => {
     setIsMenuOpened(!isMenuOpened)

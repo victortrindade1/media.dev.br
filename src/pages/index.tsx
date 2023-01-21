@@ -16,7 +16,7 @@ import {
   ScenarioPipe
 } from '../styles/pages/Home'
 
-const title = 'Media Dev'
+const title = 'MEDIA DEV'
 const subtitle = 'Software Solution'
 
 const Home: NextPage = () => {

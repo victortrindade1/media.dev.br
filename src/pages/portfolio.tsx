@@ -59,7 +59,7 @@ const listPortfolio = [
 const Portfolio: NextPage<IResponsive> = ({ isBreakpoint }: IResponsive) => {
   return (
     <Layout
-      title={`${title} - Media Dev`}
+      title={`${title} - MEDIA DEV`}
       description={`${title} - ${subtitle}`}
     >
       <Container isBreakpoint={isBreakpoint}>

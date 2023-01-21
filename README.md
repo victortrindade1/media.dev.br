@@ -1,6 +1,8 @@
 # O q estou fazendo
 
-Portfolio grid tem q ser responsivo. A parte desktop tb tá mal configurada.
+Só falta fazer o currículo em PDF \o/
+Não esquecer de reabilitar o sol
+Testar o site em um celular pra ver como fica
 
 ## Create Next App
 
