@@ -1,10 +1,9 @@
 import React, { ReactNode, useState } from 'react'
 import { NextSeo } from 'next-seo'
 
-// import badSun from '../../assets/svg/sol.svg'
+import badSun from '../../assets/svg/sol.svg'
 
-import { MainStyled } from './styles'
-// import { MainStyled, BadSun, BadSunContainer } from './styles'
+import { MainStyled, BadSun, BadSunContainer } from './styles'
 
 type Props = {
   children: ReactNode
@@ -51,9 +50,9 @@ const Layout = ({ children, title, description }: Props): JSX.Element => {
         className=""
         onMouseMove={e => handleMoveSun(e)}
       >
-        {/* <BadSunContainer left={leftPosition} top={topPosition}>
+        <BadSunContainer left={leftPosition} top={topPosition}>
           <BadSun src={badSun} alt="bad sun" />
-        </BadSunContainer> */}
+        </BadSunContainer>
         {children}
       </MainStyled>
     </>
