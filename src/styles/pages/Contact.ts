@@ -7,7 +7,7 @@ export const Container = styled.div<IContainer>`
   background: #ffe3b4 url('${props => props.background}') repeat-x bottom;
   background-size: 70vw;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
   position: relative;
   display: flex;
   flex: 1;

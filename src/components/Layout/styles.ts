@@ -17,6 +17,8 @@ export const BadSunContainer = styled.div<IBadSunContainer>`
   position: absolute;
   left: ${props => props.left && 'calc(' + props.left + 'px - 30px)'};
   top: ${props => props.top && 'calc(' + props.top + 'px - 30px)'};
+  -moz-transition: left 0.8s ease-out, top 0.8s ease-out;
+  -webkit-transition: left 0.8s ease-out, top 0.8s ease-out;
   transition: left 0.8s ease-out, top 0.8s ease-out;
 `
 

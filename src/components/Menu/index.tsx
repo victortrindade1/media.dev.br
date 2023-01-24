@@ -51,10 +51,6 @@ const links: { name: string; href: string; icon: string }[] = [
 const Menu: React.FC<IResponsive> = ({ isBreakpoint }) => {
   const [isMenuOpened, setIsMenuOpened] = useState(false)
 
-  // const handleDownloadPdf = () => {
-  //   fileDownload(curriculo, 'VictorTrindade.pdf')
-  // }
-
   const handleToggleMenu = () => {
     setIsMenuOpened(!isMenuOpened)
   }

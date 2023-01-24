@@ -94,6 +94,8 @@ export const Skill = styled.li`
 
   :hover {
     color: #555;
+    -moz-transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
     transition: color 0.3s ease;
     cursor: default;
   }
@@ -141,6 +143,8 @@ export const LinkContainer = styled.div<IResponsive>`
   }
   a:hover {
     color: #eec744;
+    -moz-transition: color 1s ease;
+    -webkit-transition: color 1s ease;
     transition: color 1s ease;
   }
 `
@@ -149,6 +153,8 @@ export const MobileScreenContainer = styled.div<IResponsive>`
   height: 25vh;
   /* width: 17vh; */
   background: #999;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
   border-radius: 8px;
   overflow: hidden;
   background: center;

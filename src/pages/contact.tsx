@@ -22,6 +22,7 @@ const Contact: NextPage = () => {
   const [label, setLabel] = useState('')
 
   const handleClickButton = (e, { href }) => {
+    console.log(e)
     e.preventDefault()
 
     setTimeout(() => {

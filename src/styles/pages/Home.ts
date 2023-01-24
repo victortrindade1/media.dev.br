@@ -20,6 +20,8 @@ export const Container = styled.div`
 const cloudAnimation = keyframes`
 to {
     right: 100%;
+    -moz-transform: translate(0);
+    -webkit-transform: translate(0);
     transform: translate(0);
   }
 `
@@ -28,6 +30,8 @@ export const CloudContainer = styled.div`
   top: 15vh;
   right: -10vw;
   position: absolute;
+  -moz-animation: ${cloudAnimation} 100s infinite linear;
+  -webkit-animation: ${cloudAnimation} 100s infinite linear;
   animation: ${cloudAnimation} 100s infinite linear;
 `
 
@@ -35,6 +39,8 @@ export const CloudContainer2 = styled.div`
   top: 30vh;
   right: -13vw;
   position: absolute;
+  -moz-animation: ${cloudAnimation} 500s infinite linear;
+  -webkit-animation: ${cloudAnimation} 500s infinite linear;
   animation: ${cloudAnimation} 500s infinite linear;
 `
 

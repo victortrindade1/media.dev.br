@@ -16,11 +16,31 @@ interface IBlockButtonContainer {
 }
 
 const iconAnimation = keyframes`
-  0% { transform:translate(0,0) }
-  1% { transform:translate(0,-10px) }
-  2% { transform:translate(0,10px) }
-  6% { transform:translate(0,0) }
-  100% { transform:translate(0,0) }
+  0% {
+    -moz-transform:translate(0,0);
+    -webkit-transform:translate(0,0);
+    transform:translate(0,0);
+  }
+  1% {
+    -moz-transform:translate(0,-10px);
+    -webkit-transform:translate(0,-10px);
+    transform:translate(0,-10px);
+  }
+  2% {
+    -moz-transform:translate(0,10px);
+    -webkit-transform:translate(0,10px);
+    transform:translate(0,10px);
+  }
+  6% {
+    -moz-transform:translate(0,0);
+    -webkit-transform:translate(0,0);
+    transform:translate(0,0);
+  }
+  100% {
+    -moz-transform:translate(0,0);
+    -webkit-transform:translate(0,0);
+    transform:translate(0,0);
+    }
 `
 
 const coin3Animation = keyframes`
@@ -64,6 +84,8 @@ const coin2Animation = keyframes`
 
 const coinAnimation = keyframes`
   0% {
+    -moz-background: url(${moeda2}) no-repeat center;
+    -webkit-background: url(${moeda2}) no-repeat center;
     background: url(${moeda2}) no-repeat center;
     opacity: 1
    }
@@ -71,6 +93,8 @@ const coinAnimation = keyframes`
     top: -90px
   }
   2.01% {
+    -moz-background: url(${moeda1}) no-repeat center;
+    -webkit-background: url(${moeda1}) no-repeat center;
     background: url(${moeda1}) no-repeat center;
     top: -90px
   }
@@ -78,6 +102,8 @@ const coinAnimation = keyframes`
     top: -100px;
   }
   4.01% {
+    -moz-background: url(${moeda2}) no-repeat center;
+    -webkit-background: url(${moeda2}) no-repeat center;
     background: url(${moeda2}) no-repeat center;
     top: -100px;
   }
@@ -98,33 +124,51 @@ const coinAnimation = keyframes`
 
 const interrogationAnimation = keyframes`
   0% {
+    -moz-background: url(${button1}) no-repeat center;
+    -webkit-background: url(${button1}) no-repeat center;
     background: url(${button1}) no-repeat center;
   }
   24.999% {
+    -moz-background: url(${button1}) no-repeat center;
+    -webkit-background: url(${button1}) no-repeat center;
     background: url(${button1}) no-repeat center;
   }
   25% {
+    -moz-background: url(${button2}) no-repeat center;
+    -webkit-background: url(${button2}) no-repeat center;
     background: url(${button2}) no-repeat center;
   }
   49.999% {
+    -moz-background: url(${button2}) no-repeat center;
+    -webkit-background: url(${button2}) no-repeat center;
     background: url(${button2}) no-repeat center;
   }
   50% {
+    -moz-background: url(${button3}) no-repeat center;
+    -webkit-background: url(${button3}) no-repeat center;
     background: url(${button3}) no-repeat center;
   }
   74.999% {
+    -moz-background: url(${button3}) no-repeat center;
+    -webkit-background: url(${button3}) no-repeat center;
     background: url(${button3}) no-repeat center;
   }
   75% {
+    -moz-background: url(${button4}) no-repeat center;
+    -webkit-background: url(${button4}) no-repeat center;
     background: url(${button4}) no-repeat center;
   }
   99.999% {
+    -moz-background: url(${button4}) no-repeat center;
+    -webkit-background: url(${button4}) no-repeat center;
     background: url(${button4}) no-repeat center;
   }
 `
 
 export const Container = styled.div<IBlockButtonContainer>`
   position: relative;
+  -moz-animation: ${props => props.isClicked && iconAnimation} 5s ease;
+  -webkit-animation: ${props => props.isClicked && iconAnimation} 5s ease;
   animation: ${props => props.isClicked && iconAnimation} 5s ease;
 
   :hover {
@@ -133,6 +177,8 @@ export const Container = styled.div<IBlockButtonContainer>`
 `
 
 export const Moeda = styled.div<IBlockButtonContainer>`
+  -moz-animation: ${props => props.isClicked && coinAnimation} 5s ease-in;
+  -webkit-animation: ${props => props.isClicked && coinAnimation} 5s ease-in;
   animation: ${props => props.isClicked && coinAnimation} 5s ease-in;
   position: absolute;
   top: -75px;
@@ -141,7 +187,11 @@ export const Moeda = styled.div<IBlockButtonContainer>`
 `
 
 export const Brilho = styled.div<IBlockButtonContainer>`
+  -moz-animation: ${props => props.isClicked && coin2Animation} 5s ease-in;
+  -webkit-animation: ${props => props.isClicked && coin2Animation} 5s ease-in;
   animation: ${props => props.isClicked && coin2Animation} 5s ease-in;
+  -moz-background: url(${moeda3}) no-repeat center;
+  -webkit-background: url(${moeda3}) no-repeat center;
   background: url(${moeda3}) no-repeat center;
   position: absolute;
   top: -90px;
@@ -151,7 +201,11 @@ export const Brilho = styled.div<IBlockButtonContainer>`
   opacity: 0;
 `
 export const Numero = styled.div<IBlockButtonContainer>`
+  -moz-animation: ${props => props.isClicked && coin3Animation} 5s ease-in;
+  -webkit-animation: ${props => props.isClicked && coin3Animation} 5s ease-in;
   animation: ${props => props.isClicked && coin3Animation} 5s ease-in;
+  -moz-background: url(${moeda4}) no-repeat center;
+  -webkit-background: url(${moeda4}) no-repeat center;
   background: url(${moeda4}) no-repeat center;
   position: absolute;
   top: -90px;
@@ -166,6 +220,9 @@ interface IIsMenu {
 }
 
 export const BaseButton = styled.div<IIsMenu>`
+  -moz-animation: ${props => props.isMenu && interrogationAnimation} 0.5s linear;
+  -webkit-animation: ${props => props.isMenu && interrogationAnimation} 0.5s
+    linear;
   animation: ${props => props.isMenu && interrogationAnimation} 0.5s linear
     infinite;
   width: 50px;

@@ -1,9 +1,10 @@
-import React, { ReactNode, useState } from 'react'
+import React, { ReactNode } from 'react'
 import { NextSeo } from 'next-seo'
 
-import badSun from '../../assets/svg/sol.svg'
+// import badSun from '../../assets/svg/sol.svg'
 
-import { MainStyled, BadSun, BadSunContainer } from './styles'
+// import { MainStyled, BadSun, BadSunContainer } from './styles'
+import { MainStyled } from './styles'
 
 type Props = {
   children: ReactNode
@@ -19,20 +20,28 @@ const variants = {
 }
 
 const Layout = ({ children, title, description }: Props): JSX.Element => {
-  const [leftPosition, setLeftPosition] = useState('50')
-  const [topPosition, setTopPosition] = useState('-100')
+  // const [leftPosition, setLeftPosition] = useState('50')
+  // const [topPosition, setTopPosition] = useState('-100')
 
-  const handleMoveSun = e => {
-    if (leftPosition === '50' && topPosition === '-100') {
-      setTimeout(() => {
-        setLeftPosition(e.pageX)
-        setTopPosition(e.pageY)
-      }, 5000)
-    } else {
-      setLeftPosition(e.pageX)
-      setTopPosition(e.pageY)
-    }
-  }
+  // const handleMoveSun = e => {
+  //   if (leftPosition === '50' && topPosition === '-100') {
+  //     setTimeout(() => {
+  //       setLeftPosition(e.pageX)
+  //       setTopPosition(e.pageY)
+  //     }, 5000)
+  //   } else {
+  //     setLeftPosition(e.pageX)
+  //     setTopPosition(e.pageY)
+  //   }
+  // }
+
+  // useEffect(() => {
+
+  //   document.addEventListener('mousemove', handleMoveSun)
+  //   return () => {
+  //     document.removeEventListener('mousemove', handleMoveSun)
+  //   }
+  // }, [leftPosition, topPosition])
 
   return (
     <>
@@ -41,6 +50,7 @@ const Layout = ({ children, title, description }: Props): JSX.Element => {
         description={description}
         openGraph={{ title, description }}
       />
+      {/* <div onMouseMove={e => handleMoveSun(e)}> */}
       <MainStyled
         initial="hidden"
         animate="enter"
@@ -48,13 +58,13 @@ const Layout = ({ children, title, description }: Props): JSX.Element => {
         variants={variants}
         transition={{ type: 'linear' }}
         className=""
-        onMouseMove={e => handleMoveSun(e)}
       >
-        <BadSunContainer left={leftPosition} top={topPosition}>
-          <BadSun src={badSun} alt="bad sun" />
-        </BadSunContainer>
+        {/* <BadSunContainer left={leftPosition} top={topPosition}>
+            <BadSun src={badSun} alt="bad sun" />
+          </BadSunContainer> */}
         {children}
       </MainStyled>
+      {/* </div> */}
     </>
   )
 }

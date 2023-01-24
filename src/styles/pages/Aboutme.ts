@@ -6,15 +6,25 @@ import skeleton_dying from '../../assets/svg/skeleton_dying.svg'
 
 const skeletonAnimation = keyframes`
   0% {
+    -moz-background: url(${skeleton}) no-repeat center;
+    -webkit-background: url(${skeleton}) no-repeat center;
     background: url(${skeleton}) no-repeat center;
    }
    5% {
+    -moz-background: url(${skeleton_dying}) no-repeat center;
+    -webkit-background: url(${skeleton_dying}) no-repeat center;
     background: url(${skeleton_dying}) no-repeat center;
    }
    10% {
+    -moz-background: url(${skeleton_dead}) no-repeat center;
+    -webkit-background: url(${skeleton_dead}) no-repeat center;
     background: url(${skeleton_dead}) no-repeat center;
    }
-  100% { background: url(${skeleton_dead}) no-repeat center; }
+  100% {
+    -moz-background: url(${skeleton_dead}) no-repeat center;
+    -webkit-background: url(${skeleton_dead}) no-repeat center;
+    background: url(${skeleton_dead}) no-repeat center;
+  }
 `
 
 interface IContainer {
@@ -26,6 +36,9 @@ interface IContainer {
 // }
 
 export const Container = styled.div<IContainer>`
+  -moz-background: #0064b8 url('${props => props.background}') no-repeat center;
+  -webkit-background: #0064b8 url('${props => props.background}') no-repeat
+    center;
   background: #0064b8 url('${props => props.background}') no-repeat center;
   background-size: cover;
   min-height: 90vh;
@@ -196,6 +209,8 @@ export const ItemSkill = styled.li`
   &:active,
   &:focus {
     > span div {
+      -moz-animation: ${skeletonAnimation} 2s;
+      -webkit-animation: ${skeletonAnimation} 2s;
       animation: ${skeletonAnimation} 2s;
     }
   }
@@ -205,5 +220,7 @@ export const Skeleton = styled.div<IContainer>`
   width: 27px;
   height: 35px;
   margin-right: 15px;
+  -moz-background: url('${props => props.background}') no-repeat center;
+  -webkit-background: url('${props => props.background}') no-repeat center;
   background: url('${props => props.background}') no-repeat center;
 `
