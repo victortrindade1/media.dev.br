@@ -144,25 +144,26 @@ export const MenuBackgroundTop = styled.div<IContainer>`
 `
 
 export const MenuItemContainer = styled.div<IContainer>`
-  -moz-background: url('${props => props.background}') no-repeat center;
-  -webkit-background: url('${props => props.background}') no-repeat center;
-  background: url('${props => props.background}') no-repeat center;
-  -moz-background: url('${props => props.background}') no-repeat center;
-  -webkit-background: url('${props => props.background}') no-repeat center;
-  background: url('${props => props.background}') no-repeat center;
-  -moz-background: url('${props => props.background}') no-repeat center;
-  -webkit-background: url('${props => props.background}') no-repeat center;
-  background: url('${props => props.background}') no-repeat center;
-  width: 30vw;
-  height: 10vw;
+  -moz-background: url('${props => props.background}') no-repeat bottom;
+  -webkit-background: url('${props => props.background}') no-repeat bottom;
+  background: url('${props => props.background}') no-repeat bottom;
+  -moz-background: url('${props => props.background}') no-repeat bottom;
+  -webkit-background: url('${props => props.background}') no-repeat bottom;
+  background: url('${props => props.background}') no-repeat bottom;
+  -moz-background: url('${props => props.background}') no-repeat bottom;
+  -webkit-background: url('${props => props.background}') no-repeat bottom;
+  background: url('${props => props.background}') no-repeat bottom;
+  width: 20vw;
+  height: 30vw;
 
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
 
   > img {
     position: absolute;
-    top: -9.5vw;
+    top: 10vw;
     width: 10vw;
   }
 
@@ -171,7 +172,7 @@ export const MenuItemContainer = styled.div<IContainer>`
     color: #fff;
     font-family: 'Press Start 2P', 'Roboto', sans-serif;
     position: absolute;
-    top: -18vw;
+    top: 0vw;
     padding: 3vw;
     background: #000;
     -moz-transition: opacity 0.5s ease;
