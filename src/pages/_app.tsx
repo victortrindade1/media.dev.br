@@ -1,5 +1,6 @@
 import React from 'react'
 import { AppProps } from 'next/app'
+import { Analytics } from '@vercel/analytics/react'
 import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles'
@@ -47,12 +48,15 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
             initial={false}
             onExitComplete={() => window.scrollTo(0, 0)}
           >
-            <Component
-              {...pageProps}
-              canonical={url}
-              key={url}
-              isBreakpoint={isBreakpoint}
-            />
+            <>
+              <Component
+                {...pageProps}
+                canonical={url}
+                key={url}
+                isBreakpoint={isBreakpoint}
+              />
+              <Analytics />
+            </>
           </AnimatePresence>
 
           <Footer />
