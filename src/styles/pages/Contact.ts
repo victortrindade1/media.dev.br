@@ -22,6 +22,7 @@ export const Mario = styled.img`
   bottom: 0;
   left: 0;
   width: 40vw;
+  max-width: 290px;
 `
 
 export const TextContainer = styled.div`
