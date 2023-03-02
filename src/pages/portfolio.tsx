@@ -43,7 +43,7 @@ const subtitle = 'Only awesome pages!'
 const listPortfolio = [
   {
     title: 'Gente Odontologia Humanizada',
-    description: 'Página web para consultório odontológico',
+    description: 'Dental office website',
     skills: ['NextJS', 'TypeScript', 'Styled Components', 'MaterialUI'],
     links: {
       github: 'https://github.com/victortrindade1/ultraoral-web',

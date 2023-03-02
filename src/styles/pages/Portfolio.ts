@@ -107,7 +107,9 @@ export const Grid = styled.div<IResponsive>`
     props.isBreakpoint ? '1fr' : '0.5fr 1fr 1fr'};
   font-size: 10px;
   padding: 10px;
-  background: #333;
+  background: #eec744;
+  border-radius: 8px;
+  color: #000;
 `
 
 export const GridColumn = styled.div``
