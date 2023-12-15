@@ -14,7 +14,8 @@ export const Container = styled.div`
   /* flex: 1; */
   flex-direction: column;
   align-items: center;
-  height: 90vh;
+  /* height: 90vh; */
+  height: calc(100vh - 70px);
 `
 
 const cloudAnimation = keyframes`

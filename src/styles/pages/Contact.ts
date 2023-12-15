@@ -13,7 +13,8 @@ export const Container = styled.div<IContainer>`
   flex: 1;
   flex-direction: column;
   align-items: center;
-  min-height: 90vh;
+  /* min-height: 90vh; */
+  height: calc(100vh - 70px);
   padding-top: 20vh;
 `
 
