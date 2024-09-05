@@ -42,18 +42,31 @@ const subtitle = 'Only awesome pages!'
 
 const listPortfolio = [
   {
-    title: 'Gente Odontologia Humanizada',
-    description: 'Dental office website',
-    skills: ['NextJS', 'TypeScript', 'Styled Components', 'MaterialUI'],
+    title: '',
+    description: '',
+    skills: [],
     links: {
-      github: 'https://github.com/victortrindade1/ultraoral-web',
-      url: 'https://genteodontologia-web.vercel.app/'
+      github: '',
+      url: ''
     },
     gifs: {
-      mobile: mobileScreen1,
-      desktop: desktopScreen1
+      mobile: '',
+      desktop: ''
     }
   }
+  // {
+  //   title: 'Gente Odontologia Humanizada',
+  //   description: 'Dental office website',
+  //   skills: ['NextJS', 'TypeScript', 'Styled Components', 'MaterialUI'],
+  //   links: {
+  //     github: 'https://github.com/victortrindade1/ultraoral-web',
+  //     url: 'https://genteodontologia-web.vercel.app/'
+  //   },
+  //   gifs: {
+  //     mobile: mobileScreen1,
+  //     desktop: desktopScreen1
+  //   }
+  // }
 ]
 
 const Portfolio: NextPage<IResponsive> = ({ isBreakpoint }: IResponsive) => {
