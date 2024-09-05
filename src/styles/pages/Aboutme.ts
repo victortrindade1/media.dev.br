@@ -42,8 +42,8 @@ export const Container = styled.div<IContainer>`
   background: #0064b8 url('${props => props.background}') no-repeat center;
   background-size: cover;
   /* min-height: 90vh; */
-  height: calc(100vh - 70px);
-
+  /* height: calc(100vh - 70px); */
+  height: auto;
   width: 100%;
   /* position: absolute; */
   /* top: 0; */
